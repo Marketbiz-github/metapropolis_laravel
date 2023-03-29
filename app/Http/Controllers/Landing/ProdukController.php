@@ -15,10 +15,11 @@ class ProdukController extends Controller
      */
     public function index()
     {
-         $response = Http::get('https://metapropolis.resellr.id/api/product')->json();
-         dd($response['data']);
+         $response = Http::get('https://metapropolis.resellr.id/api/metapropilis-product')->json();
+         // dd($response['data']);
+         $product = $response['data'];
       
-        return view('landing.konten.shop');
+        return view('landing.konten.shop', compact('product'));
     }
 
     /**
