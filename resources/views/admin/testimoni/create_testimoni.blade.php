@@ -25,6 +25,10 @@ Create Testimoni Gambar
                 <input type="file" required class="form-control" name="gambar_testimoni" id="gambar_testimoni" 
                 onchange="previewImage()" />
             </div>
+            <div class="form-group">
+                <label>Kutipan</label>
+                <textarea class="form-control" required name="kutipan" id="kutipan" placeholder="Kutipan"></textarea>
+            </div>
             <input type="submit" value="Upload" class="btn btn-primary">
         </form>
     </div>

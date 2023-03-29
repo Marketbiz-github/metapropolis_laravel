@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('testimoni', function (Blueprint $table) {
             $table->id();
-            $table->text('fembed_youtube')->nullable();
-            $table->string('gambar_testimoni')->nullable();
+            $table->text('data_testimoni')->nullable();
+            $table->string('kategori')->nullable();
             $table->text('kutipan')->nullable();
             $table->timestamps();
         });

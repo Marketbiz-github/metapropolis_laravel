@@ -137,15 +137,19 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Testimoni::create([
-            'fembed_youtube' => 
+            'data_testimoni' => 
             '<iframe width="560" height="315" src="https://www.youtube.com/embed/xoBJnpzymss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            'kategori' => 
+            'Youtube',
             'kutipan' => 
             'Ini adalah penjelasan tentang Meta Propolis pertama'
         ]);
 
         Testimoni::create([
-            'fembed_youtube' => 
+            'data_testimoni' => 
             '<iframe width="560" height="315" src="https://www.youtube.com/embed/4nqg6lsbFsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            'kategori' => 
+            'Youtube',
             'kutipan' => 
             'Ini adalah penjelasan tentang Meta Propolis kedua'
         ]);

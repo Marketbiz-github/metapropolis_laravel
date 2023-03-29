@@ -1,7 +1,7 @@
 @extends('admin.layouts.master')
 
 @section('title')
-Create Jurnal
+Create Testimoni Youtube
 @endsection
 
 @section('content')
@@ -10,7 +10,7 @@ Create Jurnal
         <div class="col-lg-12">
             <div class="d-flex flex-wrap flex-wrap align-items-center justify-content-between mb-4">
                 <div>
-                    <h4 class="mb-3">Create Jurnal</h4>
+                    <h4 class="mb-3">Create Testimoni Youtube</h4>
                 </div>
             </div>
         </div>

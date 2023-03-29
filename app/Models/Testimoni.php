@@ -11,8 +11,8 @@ class Testimoni extends Model
 
     protected $table = "testimoni";
     protected $fillable = [
-        'fembed_youtube',
-        'gambar_testimoni',
+        'data_testimoni',
+        'kategori',
         'kutipan',
         // 'isi',
         // 'tgl_upload',

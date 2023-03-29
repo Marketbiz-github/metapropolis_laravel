@@ -29,6 +29,11 @@ Edit Testimoni Gambar
                 <input type="file" class="form-control" name="gambar_testimoni" id="gambar_testimoni" 
                 onchange="previewImage()" />
             </div>
+
+            <div class="form-group">
+                <label>Kutipan</label>
+                <textarea class="form-control" required name="kutipan" id="kutipan" placeholder="Kutipan">{{ $datas->kutipan }}</textarea>
+            </div>
            
             <input type="submit" value="Update" class="btn btn-primary">
         </form>

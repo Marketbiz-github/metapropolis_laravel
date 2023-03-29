@@ -20,16 +20,18 @@ class TestimoniAdminController extends Controller
      */
     public function index()
     {
-        $datas = DB::table('testimoni')
-                    ->select('testimoni.*')
-                    // ->orderBy('id', 'desc')
-                    ->get();
-        $datas2 = DB::table('testimoni')
-                    ->select('testimoni.gambar_testimoni','testimoni.id')
-                    ->where('testimoni.gambar_testimoni', '!=', null)
-                    // ->orderBy('id', 'desc')
-                    ->get();
-        return view('admin.testimoni.index', compact('datas','datas2'));
+      //   $datas = DB::table('testimoni')
+      //               ->select('testimoni.*')
+      //               // ->orderBy('id', 'desc')
+      //               ->get();
+      //   $datas2 = DB::table('testimoni')
+      //               ->select('testimoni.gambar_testimoni','testimoni.id')
+      //               ->where('testimoni.gambar_testimoni', '!=', null)
+      //               // ->orderBy('id', 'desc')
+      //               ->get();
+
+        $data = Testimoni::all();
+        return view('admin.testimoni.index', compact('data'));
     }
 
     /**
@@ -58,7 +60,8 @@ class TestimoniAdminController extends Controller
 
         //create ke database
         Testimoni::create([
-			'fembed_youtube' => $request->fembed_youtube,
+			'data_testimoni' => $request->fembed_youtube,
+			'kategori' => 'Youtube',
 			'kutipan' => $request->kutipan,
 		]);
     
@@ -106,7 +109,7 @@ class TestimoniAdminController extends Controller
 
         //create ke database
         Testimoni::findOrFail($id)->update([
-            'fembed_youtube' => $request->fembed_youtube,
+            'data_testimoni' => $request->fembed_youtube,
             'kutipan' => $request->kutipan
         ]);
         
@@ -147,13 +150,15 @@ class TestimoniAdminController extends Controller
         $file=$request->file('gambar_testimoni');
         $nama_file = time()."_".$file->getClientOriginalName();
         $tujuan_upload = public_path('storage/gambar_testimoni/');
-		$file->move($tujuan_upload,$nama_file);
+		  $file->move($tujuan_upload,$nama_file);
 
         //create ke database
         Testimoni::create([
-			'gambar_testimoni' => $nama_file,
+			'data_testimoni' => $nama_file,
+			'kategori' => 'Image',
+			'kutipan' => $request->kutipan,
 			
-		]);
+		  ]);
     
         return redirect('testimoni_admin')->with('massage', 'Berhasil Menambah Testimoni');
 
@@ -177,7 +182,7 @@ class TestimoniAdminController extends Controller
             File::delete(public_path('storage/gambar_testimoni/'. $request->gambar_lama));
         }else{
             Testimoni::findOrFail($id)->update([
-                'gambar_testimoni' => $request->gambar_lama,
+                'data_testimoni' => $request->gambar_lama,
             ]);
             return redirect('testimoni_admin')->with('massage', 'Berhasil Mengubah Testimoni');
         }
@@ -189,7 +194,8 @@ class TestimoniAdminController extends Controller
 
         //create ke database
         Testimoni::findOrFail($id)->update([
-            'gambar_testimoni' => $nama_file,
+            'data_testimoni' => $nama_file,
+            'kutipan' => $request->kutipan,
         ]);
         
         return redirect('testimoni_admin')->with('massage', 'Berhasil Mengubah Testimoni');
@@ -209,16 +215,9 @@ class TestimoniAdminController extends Controller
 
     public function testimonial_all()
     {
-        $datas = DB::table('testimoni')
-                    ->select('testimoni.*')
-                    // ->orderBy('id', 'desc')
-                    ->get();
-        $datas2 = DB::table('testimoni')
-                    ->select('testimoni.gambar_testimoni','testimoni.id')
-                    ->where('testimoni.gambar_testimoni', '!=', null)
-                    // ->orderBy('id', 'desc')
-                    ->get();
-        return view('landing.konten.testimonial_all', compact('datas','datas2'));
+        $youtube = Testimoni::where('kategori' , 'Youtube')->get();
+        $image =  Testimoni::where('kategori' , 'Image')->get();
+        return view('landing.konten.testimonial_all', compact('youtube' , 'image'));
     }
 }
 

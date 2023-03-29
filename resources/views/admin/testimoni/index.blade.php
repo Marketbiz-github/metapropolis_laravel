@@ -13,49 +13,52 @@ Testimoni
                     <h4 class="mb-3">Testimoni</h4>
                     {{-- <p class="mb-0">The product list effectively dictates product presentation and provides space<br> to list your products and offering in the most appealing way.</p> --}}
                 </div>
-                <a href="{{route('testimoni_admin.create')}}" class="btn btn-primary add-list"><i class="las la-plus"></i>Add Youtube Testimoni</a>
-                <a href="{{route('testimoni_admin_gambar_view_create')}}" class="btn btn-primary add-list"><i class="las la-plus"></i>Add Gambar Testimoni</a>
+                <a href="{{route('testimoni_admin.create')}}" class="btn btn-primary add-list"><i
+                        class="las la-plus"></i>Add Youtube Testimoni</a>
+                <a href="{{route('testimoni_admin_gambar_view_create')}}" class="btn btn-primary add-list"><i
+                        class="las la-plus"></i>Add Gambar Testimoni</a>
             </div>
         </div>
         @if(session()->has('massage'))
         <div class="alert alert-success col-lg-12" role="alert">
             {{session('massage')}}
-          </div>
+        </div>
         @endif
 
-        <div class="row">
-
-        <div class="col-lg-6">
-            <div class="table-responsive rounded mb-3">
+        <div class="table-responsive rounded mb-3">
             <table class="data-tables table mb-0 tbl-server-info">
                 <thead class="bg-white text-uppercase">
                     <tr class="ligth ligth-data">
-                        <th>Youtube</th>
-                        <th>Judul</th>
+                        <th>Data Testimoni</th>
+                        <th>Kategori</th>
+                        <th>kutipan</th>
                         {{-- <th>Isi</th> --}}
                         <th>Aksi</th>
                     </tr>
                 </thead>
-                @foreach($datas as $data)
+                @foreach($data as $data)
 
                 <tbody class="ligth-body">
+                    @if ($data->kategori == 'Youtube')
                     <tr>
                         <td>
                             <div class="col-md-3">
-
-                                {!! $data->fembed_youtube !!}
+                                {!! $data->data_testimoni !!}
                             </div>
                         </td>
+                        <td>{{$data->kategori}}</td>
                         <td>{{$data->kutipan}}</td>
-                        {{-- <td>{{$data->isi}}</td> --}}
                         <td>
                             <div class="d-flex align-items-center list-action">
-                                <a class="badge bg-success mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"
-                                    href="{{route('testimoni_admin.edit', $data->id)}}"><i class="ri-pencil-line mr-0"></i></a>
-                                 <form action="{{route('testimoni_admin.destroy', $data->id)}}" method="POST">
+                                <a class="badge bg-success mr-2" data-toggle="tooltip" data-placement="top" title=""
+                                    data-original-title="Edit" href="{{route('testimoni_admin.edit', $data->id)}}"><i
+                                        class="ri-pencil-line mr-0"></i></a>
+                                <form action="{{route('testimoni_admin.destroy', $data->id)}}" method="POST">
                                     @method('delete')
                                     @csrf
-                                    <button class="badge bg-warning mb-1 border-0" onclick="return confirm('Hapus Data Ini ?')" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                    <button class="badge bg-warning mb-1 border-0"
+                                        onclick="return confirm('Hapus Data Ini ?')" data-toggle="tooltip"
+                                        data-placement="top" title="" data-original-title="Delete">
                                         <i class="ri-delete-bin-line mr-0"></i>
                                     </button>
                                 </form>
@@ -64,41 +67,27 @@ Testimoni
                             </div>
                         </td>
                     </tr>
-                </tbody>
-                @endforeach
-            </table>
-            </div>
-        </div>
-
-        <div class="col-lg-6">
-            <div class="table-responsive rounded mb-3">
-            <table class="data-tables table mb-0 tbl-server-info">
-                <thead class="bg-white text-uppercase">
-                    <tr class="ligth ligth-data">
-                        <th>Gambar Testimoni</th>
-                        <th>Aksi</th>
-                    </tr>
-                </thead>
-                @foreach($datas2 as $data)
-
-                <tbody class="ligth-body">
+                    @else
                     <tr>
                         <td>
-                            @if($data->gambar_testimoni == null)
-                            @else
-                            <img src="{{asset('storage/gambar_testimoni/'. $data->gambar_testimoni)}}" width="175" height="auto" alt="">
-                            @endif
+                            <img src="{{asset('storage/gambar_testimoni/'. $data->data_testimoni)}}" width="175"
+                                height="auto" alt="">
                         </td>
-                        {{-- <td>{{$data->isi}}</td> --}}
+                        <td>{{$data->kategori}}</td>
+                        <td>{{$data->kutipan}}</td>
                         <td>
                             <div class="d-flex align-items-center list-action">
-                                <a class="badge bg-success mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"
-                                    href="{{route('testimoni_admin_gambar_edit', $data->id)}}"><i class="ri-pencil-line mr-0"></i></a>
-                                 <form action="{{route('testimoni_admin_gambar_delete', $data->id)}}" method="POST">
+                                <a class="badge bg-success mr-2" data-toggle="tooltip" data-placement="top" title=""
+                                    data-original-title="Edit"
+                                    href="{{route('testimoni_admin_gambar_edit', $data->id)}}"><i
+                                        class="ri-pencil-line mr-0"></i></a>
+                                <form action="{{route('testimoni_admin_gambar_delete', $data->id)}}" method="POST">
                                     {{-- @method('delete') --}}
                                     @csrf
                                     <input type="hidden" name="gambar_lama" value="{{$data->gambar_testimoni}}">
-                                    <button class="badge bg-warning mb-1 border-0" onclick="return confirm('Hapus Data Ini ?')" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                    <button class="badge bg-warning mb-1 border-0"
+                                        onclick="return confirm('Hapus Data Ini ?')" data-toggle="tooltip"
+                                        data-placement="top" title="" data-original-title="Delete">
                                         <i class="ri-delete-bin-line mr-0"></i>
                                     </button>
                                 </form>
@@ -107,14 +96,12 @@ Testimoni
                             </div>
                         </td>
                     </tr>
+                    @endif
                 </tbody>
                 @endforeach
             </table>
-            </div>
         </div>
 
-
-    </div>
 
 
 

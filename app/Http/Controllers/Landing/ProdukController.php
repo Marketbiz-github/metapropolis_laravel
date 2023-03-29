@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Landing;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class ProdukController extends Controller
 {
@@ -14,6 +15,9 @@ class ProdukController extends Controller
      */
     public function index()
     {
+         $response = Http::get('https://metapropolis.resellr.id/api/product')->json();
+         dd($response['data']);
+      
         return view('landing.konten.shop');
     }
 

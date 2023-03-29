@@ -186,39 +186,39 @@
             <div class="content d-flex flex-column justify-content-center">
               <h3>Langkah Join Meta Propolis ?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Ingin Dapat Keuntungan Maksimal? Dengan Modal Minimal? Daftar Reseller dan Dropship Meta Propolis
               </p>
               <div class="row">
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
+                    <i class="bi bi-person-fill-check"></i>
                     <span style="font-size:28px;" class="mt-2">Register</span>
                    {{-- <h4 class="mt-2"> <b>Register</b></h4> --}}
-                   <p>consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
+                   <p>Masukkan data diri secara lengkap dan lakukan aktivasi akun melalui email.</p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-journal-richtext"></i>
-                    <span style="font-size:28px;" class="mt-2">Aktivasi</span>
-                    <p> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
+                    <span style="font-size:28px;" class="mt-2">Beli Produk Paket Reseller</span>
+                    <p>Hanya dengan membeli 3 botol Meta Propolis kamu bisa langsung menjadi Reseller.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-wrench-adjustable-circle"></i>
+                    <span style="font-size:28px;" class="mt-2">Setup Website Toko Onlinemu</span>
+                    <p>Dengan Bergabung menjadi Reseller Meta Propolis, Kamu akan langsung mendapatkan Website Toko Online.</p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-journal-richtext"></i>
-                    <span style="font-size:28px;" class="mt-2">Beli Paket Reseller</span>
-                    <p>consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
-                    <span style="font-size:28px;" class="mt-2">Finish</span>
-                    <p>consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
+                    <span style="font-size:28px;" class="mt-2">Jualan</span>
+                    <p>Dapatkan penghasilan hingga puluhan juta setiap bulan dengan terus aktif dalam memasarkan produk Meta Propolis.</p>
                   </div>
                 </div>
               </div>
@@ -253,40 +253,41 @@
           <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
           <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
             <div class="content d-flex flex-column justify-content-center">
-            <h3>Dapat apa jika bergabung Meta Propolis ?</h3>
-              <p>
+            <h3>Apa yang kamu dapatkan ?</h3>
+              {{-- <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
+              </p> --}}
               <div class="row">
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-emoji-smile"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2" class="purecounter"></span>
-                    <p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
+                    <i class="bi bi-journal-richtext"></i>
+                    <span style="font-size:28px;" class="mt-2">Pelatihan Bisnis</span>
+                   {{-- <h4 class="mt-2"> <b>Register</b></h4> --}}
+                   <p>Setelah Daftar Reseller Kamu akan mendapatkan Pelatihan Bisnis GRATIS dari Mentor - Mentor Handal jadi jangan kawatir kamu bakalan dibimbing supaya menaikkan Omzet jualan hingga puluhan juta.</p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-journal-richtext"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="2" class="purecounter"></span>
-                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
+                    <span style="font-size:28px;" class="mt-2">REWARD</span>
+                    <p>Tungkatkan terus omzet penjualanmu, maka hadiah – hadiah menarik akan kamu dapatkan.</p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-clock"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="4" class="purecounter"></span>
-                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
+                    <i class="bi bi-journal-richtext"></i>
+                    <span style="font-size:28px;" class="mt-2">Tools Jualan</span>
+                    <p>Kamu bakal disupport berupa konten marketing, gambar, tools, video di channle telegram setiap harinya untuk bahan promosi kamu.</p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-award"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="4" class="purecounter"></span>
-                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
+                    <i class="bi bi-journal-richtext"></i>
+                    <span style="font-size:28px;" class="mt-2">Website Toko Online</span>
+                    <p>Setlah gabung menjadi Reseller kamu akan otomatis mendapatkan Website Toko Online</p>
                   </div>
                 </div>
               </div>
@@ -314,8 +315,13 @@
             @foreach($data_testimoni as $data_testi)
             <div class="swiper-slide">
               <div class="testimonial-item">
+                 @if ($data_testi->kategori == 'Youtube')
+                 {!! $data_testi->data_testimoni !!}
+                 @else
+                  <img src="{{asset('storage/gambar_testimoni/'. $data_testi->data_testimoni)}}" width="400"
+                                height="auto" alt="">
+                 @endif
                 {{-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> --}}
-                {!! $data_testi->fembed_youtube !!}
                 {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4nqg6lsbFsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> --}}
                 {{-- <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4> --}}
