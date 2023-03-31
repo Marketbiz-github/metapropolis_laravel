@@ -29,7 +29,7 @@
       @include('landing.layouts.navbar')
 
       {{-- <a href="#" class="get-started-btn scrollto"><i class="fa fa-shopping-cart"></i> Shop</a> --}}
-      <a href="{{route('produk_meta')}}" class="get-started-btn scrollto"><i class="fa fa-shopping-cart"></i> Shop</a>
+      <a href="{{route('produk_meta')}}" class="get-started-btn scrollto"><i class="fa fa-shopping-cart"></i> Beli</a>
 
     </div>
   </header><!-- End Header -->

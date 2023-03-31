@@ -26,7 +26,8 @@ Edit Faq
             </div>
             <div class="form-group">
                 <label>Jawaban</label>
-                <textarea class="form-control" required name="jawaban" id="jawaban" placeholder="Jawaban">{{$datas->jawaban}}</textarea>
+                <input id="jawaban" required type="hidden" name="jawaban" value="{{old('jawaban', $datas->jawaban)}}">
+                <trix-editor aria-required="jawaban" input="jawaban"></trix-editor>
             </div>
             <input type="submit" value="Update" class="btn btn-primary">
         </form>

@@ -260,6 +260,8 @@
   new Swiper('.testimonials-slider', {
     speed: 600,
     loop: true,
+    calculateHeight:true,
+    autoHeight: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false

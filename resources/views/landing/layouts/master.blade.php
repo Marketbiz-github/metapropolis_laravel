@@ -28,7 +28,7 @@
       @include('landing.layouts.navbar')
 
 
-      <a href="{{route('produk_meta')}}" class="get-started-btn scrollto"><i class="fa fa-shopping-cart"></i> Shop</a>
+      <a href="{{route('produk_meta')}}" class="get-started-btn scrollto"><i class="fa fa-shopping-cart"></i> Beli</a>
     </div>
   </header><!-- End Header -->
 
@@ -47,13 +47,15 @@
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="fa fa-handshake-o"></i>
-            <h3><a href="{{route('register')}}">Join Reseller</a></h3>
+            {{-- <h3><a href="{{route('register')}}">Join Reseller</a></h3> --}}
+            <h3><a href="https://metapropolis.resellr.id/register-reseller">Join Reseller</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="fa fa-handshake-o"></i>
-            <h3><a href="{{route('register_dropshipper')}}">Join Dropshipper</a></h3>
+            {{-- <h3><a href="{{route('register_dropshipper')}}">Join Dropshipper</a></h3> --}}
+            <h3><a href="https://metapropolis.resellr.id/register-dropshipper?id=26480">Join Dropshipper</a></h3>
           </div>
         </div>
       </div>
@@ -191,8 +193,8 @@
               <div class="row">
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-person-fill-check"></i>
-                    <span style="font-size:28px;" class="mt-2">Register</span>
+                    <i class="fa-regular fa-address-card" style="color: #ffc451;margin-top: 5px;" ></i>
+                    <span style="font-size:24px;" class="mt-2">Register</span>
                    {{-- <h4 class="mt-2"> <b>Register</b></h4> --}}
                    <p>Masukkan data diri secara lengkap dan lakukan aktivasi akun melalui email.</p>
                   </div>
@@ -200,24 +202,24 @@
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
-                    <span style="font-size:28px;" class="mt-2">Beli Produk Paket Reseller</span>
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffc451;margin-top: 5px;"></i>
+                    <span style="font-size:24px;" class="mt-2">Beli Produk Paket Reseller</span>
                     <p>Hanya dengan membeli 3 botol Meta Propolis kamu bisa langsung menjadi Reseller.</p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-wrench-adjustable-circle"></i>
-                    <span style="font-size:28px;" class="mt-2">Setup Website Toko Onlinemu</span>
+                    <i class="fa-solid fa-gears" style="color: #ffc451;margin-top: 5px;"></i>
+                    <span style="font-size:24px;" class="mt-2">Setup Website Toko Onlinemu</span>
                     <p>Dengan Bergabung menjadi Reseller Meta Propolis, Kamu akan langsung mendapatkan Website Toko Online.</p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
-                    <span style="font-size:28px;" class="mt-2">Jualan</span>
+                    <i class="fa-solid fa-shop" style="color: #ffc451;margin-top: 5px;"></i>
+                    <span style="font-size:24px;" class="mt-2">Jualan</span>
                     <p>Dapatkan penghasilan hingga puluhan juta setiap bulan dengan terus aktif dalam memasarkan produk Meta Propolis.</p>
                   </div>
                 </div>
@@ -234,9 +236,9 @@
   <div class="container" data-aos="zoom-in">
 
     <div class="text-center">
-      <h3>Segera Join</h3>
-      <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <a class="cta-btn" href="#">Join di Sini</a>
+      <h3>Raih Omzet Hingga Puluhan Juta Setiap Bulan</h3>
+      <p>Dengan Menjadi reseller Meta Propolis kamu akan memiliki banyak keuntungan, di antaranya adalah mendapatkan produk berkualitas dengan harga yang lebih murah, raih peluang mendaptakan omzet puluhan juta setiap bulan.</p>
+      <a class="cta-btn" href="https://metapropolis.resellr.id/register-reseller">Join di Sini</a>
     </div>
 
   </div>
@@ -254,13 +256,10 @@
           <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
             <div class="content d-flex flex-column justify-content-center">
             <h3>Apa yang kamu dapatkan ?</h3>
-              {{-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p> --}}
               <div class="row">
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
+                    <i class="fa-solid fa-graduation-cap" style="color: #ffc451;margin-top: 5px;"></i>
                     <span style="font-size:28px;" class="mt-2">Pelatihan Bisnis</span>
                    {{-- <h4 class="mt-2"> <b>Register</b></h4> --}}
                    <p>Setelah Daftar Reseller Kamu akan mendapatkan Pelatihan Bisnis GRATIS dari Mentor - Mentor Handal jadi jangan kawatir kamu bakalan dibimbing supaya menaikkan Omzet jualan hingga puluhan juta.</p>
@@ -269,7 +268,7 @@
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
+                    <i class="fa-regular fa-star" style="color: #ffc451;margin-top: 5px;"></i>
                     <span style="font-size:28px;" class="mt-2">REWARD</span>
                     <p>Tungkatkan terus omzet penjualanmu, maka hadiah – hadiah menarik akan kamu dapatkan.</p>
                   </div>
@@ -277,7 +276,7 @@
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
+                    <i class="fa-solid fa-screwdriver-wrench" style="color: #ffc451;margin-top: 5px;"></i>
                     <span style="font-size:28px;" class="mt-2">Tools Jualan</span>
                     <p>Kamu bakal disupport berupa konten marketing, gambar, tools, video di channle telegram setiap harinya untuk bahan promosi kamu.</p>
                   </div>
@@ -285,7 +284,7 @@
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
+                    <i class="fa-solid fa-code" style="color: #ffc451;margin-top: 5px;"></i>
                     <span style="font-size:28px;" class="mt-2">Website Toko Online</span>
                     <p>Setlah gabung menjadi Reseller kamu akan otomatis mendapatkan Website Toko Online</p>
                   </div>
@@ -378,7 +377,7 @@
           <div class="post-item position-relative h-100">
 
             <div class="post-img position-relative overflow-hidden">
-              <img src="{{asset('storage/gambar_blog/'.$blog->gambar_blog )}}" class="img-fluid" alt="">
+              <img src="{{asset('storage/gambar_blog/'.$blog->gambar_blog )}}" class="img-fluid w-100" alt="">
               <span class="post-date">{{$blog->tgl_upload}}</span>
             </div>
 

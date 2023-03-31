@@ -51,7 +51,14 @@ class ProdukController extends Controller
      */
     public function show($id)
     {
-        //
+        $url = 'https://metapropolis.resellr.id/api/detail-product-meta/' . $id;
+        $response = Http::get($url)->json();
+        
+        $data = $response['data'];
+
+      //   dd($data);
+        return view('landing.konten.detailProduct', compact('data'));
+
     }
 
     /**

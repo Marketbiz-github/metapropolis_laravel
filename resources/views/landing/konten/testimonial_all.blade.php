@@ -62,8 +62,7 @@ Testimonial Meta Propolis - Meta Propolis
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center justify-content-lg-between">
 
-            <img class="logo me-auto me-lg-0" src="{{asset('image_propolis/1669617335-75x75.png')}}" width="75"
-                height="auto" alt="" srcset="">
+            @include('landing.layouts.logo')
             <!-- <h1 class="logo me-auto me-lg-0"><a href="index.html">Meta<span>Propolis</span></a></h1> -->
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -72,7 +71,7 @@ Testimonial Meta Propolis - Meta Propolis
 
             {{-- <a href="#" class="get-started-btn scrollto"><i class="fa fa-shopping-cart"></i> Shop</a> --}}
             <a href="{{route('produk_meta')}}" class="get-started-btn scrollto"><i class="fa fa-shopping-cart"></i>
-                Shop</a>
+                Beli</a>
 
         </div>
     </header><!-- End Header -->
@@ -122,9 +121,9 @@ Testimonial Meta Propolis - Meta Propolis
                 <div id="Whatsapp" class="tabcontent">
                     <div class="row">
                         @foreach($image as $data)
-                        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="10">
+                        <div class="col-lg-3" data-aos="fade-left" data-aos-delay="10">
                             <img src="{{asset('storage/gambar_testimoni/'. $data->data_testimoni)}}"
-                                height="auto" alt="" style="max-width: 500px;">
+                                height="auto" alt="" style="max-width: 100%;" loading="lazy">
                             <p class="">
                                 {!! $data->kutipan !!}
                             </p>

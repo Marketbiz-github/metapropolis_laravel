@@ -25,7 +25,8 @@ Create Faq
             </div>
             <div class="form-group">
                 <label>Jawaban</label>
-                <textarea class="form-control" required name="jawaban" id="jawaban" placeholder="Jawaban"></textarea>
+                <input id="jawaban" required type="hidden" name="jawaban">
+                <trix-editor aria-required="jawaban" input="jawaban"></trix-editor>
             </div>
             <input type="submit" value="Upload" class="btn btn-primary">
         </form>

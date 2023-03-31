@@ -51,6 +51,8 @@ Route::get('/detail_jurnal/{id}', [JurnalController::class, 'detail'])->name('de
 Route::get('/faq', [FaqController::class, 'index'])->name('faq');
 Route::get('/testimonial_all', [TestimoniAdminController::class, 'testimonial_all'])->name('testimonial_all');
 
+Route::get('/detail-product/{id}', [ProdukController::class, 'show'])->name('detail.product');
+
 
 //AUTH
 Route::get('/login', [LoginController::class, 'index'])->name('login');

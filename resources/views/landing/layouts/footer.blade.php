@@ -10,15 +10,14 @@
                 Lt. 3A, Grand ITC Permata Hijau Emerald 25, <br>
                  Jl. Arteri Permata Hijau No.11, RT.11/RW.10, Grogol Utara, <br>
                  Kec. Kby. Lama, jakarta, Daerah Khusus Ibukota Jakarta 12210 <br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Phone:</strong> +62 812-1239-2752<br>
                 <strong>Email:</strong> info@example.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100091457464973" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.youtube.com/@metapropolis3536" class="youtube"><i class="bx bxl-youtube"></i></a>
+                <a href="https://www.instagram.com/metapropolis/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.tiktok.com/@metabiolifeindonesia" class="tiktok"><i class="bx bxl-tiktok"></i></a>
               </div>
             </div>
           </div>
@@ -27,11 +26,11 @@
             <h4>Link</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="{{url('/')}}">Beranda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Tentang Kami</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Jurnal</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Join Resellr</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Faq</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Kontak</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('tentang_kami')}}">Tentang Kami</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('jurnal')}}">Jurnal</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://metapropolis.resellr.id/register-reseller">Join Resellr</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://metapropolis.resellr.id/register-dropshipper?id=26480">Join Dropshipper</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('faq')}}">Faq</a></li>
             </ul>
           </div>
 
@@ -51,8 +50,10 @@
             <h5>
               
              {{-- <a href="#"><span class="fa fa-facebook"> Facebook meta</span></a> <br><br> --}}
-             <a href="#"><span class="fa fa-instagram"> Instagram meta</span></a> <br><br>
-             <a href="#"><span class="fa fa-youtube"> Youtube meta</span></a> <br>
+             <a href="https://www.instagram.com/metapropolis/"><span class="fa fa-instagram"> Instagram meta</span></a> <br><br>
+             <a href="https://www.youtube.com/@metapropolis3536"><span class="fa fa-youtube"> Youtube meta</span></a> <br><br>
+             <a href="https://www.facebook.com/profile.php?id=100091457464973"><span class="fa-brands fa-facebook"> Facebook meta</span></a> <br><br>
+             <a href="https://www.tiktok.com/@metabiolifeindonesia"><span class="fa-brands fa-tiktok"> Tiktok meta</span></a> <br>
             </h5>
             {{-- <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
@@ -90,6 +91,11 @@
   <script src="{{asset('landing/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
   <script src="{{asset('landing/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
   <script src="{{asset('landing/assets/vendor/php-email-form/validate.js')}}"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  {{-- FONT AWESOME --}}
+  <script src="https://kit.fontawesome.com/c1ac2a479a.js" crossorigin="anonymous"></script>
 
   <!-- Template Main JS File -->
   <script src="{{asset('landing/assets/js/main.js')}}"></script>
