@@ -1,0 +1,1 @@
+<a href="{{route('produk_meta')}}" class="btn btn-warning bg-warning.bg-gradient rounded-pill text-dark shadow btn-lg"><i class="fa fa-shopping-cart"></i> Beli Sekarang</a>
