@@ -46,7 +46,7 @@ Shop - Meta Propolis
             {{-- Product Thumbnail, Price. Short Desc --}}
             <div class="row">
                <div class="col-6 p-5">
-                  <img src="{{ $data['images'][1]['image_link'] }}" alt="" style="width: 100%;" class="rounded shadow">
+                  <img src="{{ $data['images'][0]['image_link'] }}" alt="" style="width: 100%;" class="rounded shadow">
                </div>
                <div class="col-6 p-5 m-auto">
                   <h2 class="font-weight-bold text-warning">{{ $data['name'] }}</h2>

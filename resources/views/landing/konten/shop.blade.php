@@ -55,7 +55,7 @@ Shop - Meta Propolis
                     @foreach ($product as $data)
                     <div class="col-4">
                         <div class="card w-100 border-0 shadow" style="width: 18rem;">
-                            <img class="card-img-top p-2 rounded" src="{{$data['images'][1]['image_link']}}"
+                            <img class="card-img-top p-2 rounded" src="{{$data['images'][0]['image_link']}}"
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $data['name'] }}</h5>
