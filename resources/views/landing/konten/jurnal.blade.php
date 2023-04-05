@@ -60,8 +60,8 @@
             <div class="post-item position-relative h-100">
   
               <div class="post-img position-relative overflow-hidden">
-                <img src="{{asset('storage/gambar_jurnal/'.$jurnal->gambar_jurnal )}}" class="img-fluid" alt="">
-                
+                <img src="{{asset('storage/gambar_jurnal/'.$jurnal->gambar_jurnal )}}" class="img-fluid w-100" alt="">
+                <span class="post-date">{{date('d M Y', strtotime($jurnal->created_at));}}</span>
               </div>
   
               <div class="post-content d-flex flex-column">
@@ -80,7 +80,8 @@
   
                 <hr>
   
-                <a href="{{route('detail_jurnal',$jurnal->id)}}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                {{-- <a href="{{route('detail_jurnal',$jurnal->id)}}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a> --}}
+                <a href="{{('storage/file_jurnal/'. $jurnal->file_jurnal)}}" target="_blank" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
   
               </div>
   

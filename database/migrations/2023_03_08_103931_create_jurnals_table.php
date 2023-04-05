@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('jurnal', function (Blueprint $table) {
             $table->id();
-            $table->string('gambar_jurnal');
             $table->string('judul');
-            $table->text('isi');
+            $table->string('gambar_jurnal');
+            $table->string('file_jurnal');
             // $table->string('tgl_upload');
             $table->timestamps();
         });

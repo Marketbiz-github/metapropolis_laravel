@@ -13,7 +13,7 @@ class Jurnal extends Model
     protected $fillable = [
         'gambar_jurnal',
         'judul',
-        'isi',
+        'file_jurnal',
         // 'tgl_upload',
     ];
 

@@ -35,18 +35,10 @@ Edit Jurnal
                 <label>Judul</label>
                 <input class="form-control" required name="judul" id="judul" placeholder="Judul" value="{{$datas->judul}}" />
             </div>
-            {{-- <div class="form-group">
-                <b>Isi Blog</b>
-                <textarea class="form-control" required name="isi" id="isi" placeholder="Isi Blog">{{$datas->isi}}</textarea>
-            </div> --}}
             <div class="form-group">
-                <label for="isi">Isi Blog</label>
-                @error('isi')
-                <p class="text-danger">Isi Blog Harus diisi</p>
-                    
-                @enderror
-                <input id="isi" required type="hidden" name="isi" value="{{old('isi', $datas->isi)}}">
-                <trix-editor aria-required="isi" input="isi"></trix-editor>
+                <label class="form-label" for="file jurnal">File Jurnal PDF</label>
+                <input type="hidden" name="file_jurnal_lama" value="{{$datas->file_jurnal}}">
+                <input type="file" required class="form-control" name="file_jurnal" id="file_jurnal"/>
             </div>
             <input type="submit" value="Update" class="btn btn-primary">
         </form>

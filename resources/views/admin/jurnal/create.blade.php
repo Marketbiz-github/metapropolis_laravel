@@ -31,13 +31,8 @@ Create Jurnal
                 <input class="form-control" required name="judul" id="judul" placeholder="Judul" value="{{old('judul')}}" />
             </div>
             <div class="form-group">
-                <label for="isi">Isi Jurnal</label>
-                @error('isi')
-                <p class="text-danger">Isi Jurnal Harus diisi</p>
-                    
-                @enderror
-                <input id="isi" required type="hidden" name="isi">
-                <trix-editor aria-required="isi" input="isi"></trix-editor>
+                <label class="form-label" for="file jurnal">File Jurnal PDF</label>
+                <input type="file" required class="form-control" name="file_jurnal" id="file_jurnal"/>
             </div>
             <input type="submit" value="Upload" class="btn btn-primary">
         </form>

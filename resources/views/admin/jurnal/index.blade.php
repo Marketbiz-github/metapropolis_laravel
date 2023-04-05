@@ -28,6 +28,7 @@ Jurnal
                     <tr class="ligth ligth-data">
                         <th>Gambar</th>
                         <th>Judul</th>
+                        <th>File Jurnal</th>
                         {{-- <th>Isi</th> --}}
                         <th>Aksi</th>
                     </tr>
@@ -40,6 +41,7 @@ Jurnal
                             <img src="{{('storage/gambar_jurnal/'. $data->gambar_jurnal)}}" width="175" height="auto" alt="">
                         </td>
                         <td>{{$data->judul}}</td>
+                        <td><a href="{{('storage/file_jurnal/'. $data->file_jurnal)}}" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fas fa-file"></i></a></td>
                         {{-- <td>{{$data->isi}}</td> --}}
                         <td>
                             <div class="d-flex align-items-center list-action">

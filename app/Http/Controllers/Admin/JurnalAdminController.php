@@ -44,24 +44,31 @@ class JurnalAdminController extends Controller
      */
     public function store(Request $request)
     {
+         // dd($request->all());
         //validasi data
         $validasiData = $request->validate([
             'gambar_jurnal' => 'required|image|file|max:20024',
             'judul' => 'required|max:255',
-            'isi' => 'required'
+            'file_jurnal' => 'required|file|mimes:pdf'
         ]);
 
         //upload Gambar
         $file=$request->file('gambar_jurnal');
         $nama_file = time()."_".$file->getClientOriginalName();
         $tujuan_upload = public_path('storage/gambar_jurnal/');
-		$file->move($tujuan_upload,$nama_file);
+		  $file->move($tujuan_upload,$nama_file);
+
+        //upload pdf
+        $pdf=$request->file('file_jurnal');
+        $nama_file_pdf = time()."_".$pdf->getClientOriginalName();
+        $tujuan_upload_file = public_path('storage/file_jurnal/');
+		  $pdf->move($tujuan_upload_file,$nama_file_pdf);
 
         //create ke database
         Jurnal::create([
 			'gambar_jurnal' => $nama_file,
 			'judul' => $request->judul,
-			'isi' => $request->isi,
+			'file_jurnal' => $nama_file_pdf,
             // 'tgl_upload' =>  Carbon::now()->isoFormat('D MMMM Y')
 		]);
     
@@ -108,35 +115,45 @@ class JurnalAdminController extends Controller
         $validasiData = $request->validate([
             'gambar_jurnal' => 'image|file|max:20024',
             'judul' => 'required|max:255',
-            'isi' => 'required'
+            'file_jurnal' => 'required|file|mimes:pdf'
         ]);
 
         // if(){
 
         // }
-        //cek apakah ada file baru
+        //cek apakah ada gambar baru
         if($request->hasFile('gambar_jurnal')){
             //Hapus file lama
             File::delete(public_path('storage/gambar_jurnal/'. $request->gambar_lama));
-        }else{
+
+            $file=$request->file('gambar_jurnal');
+            $nama_file = time()."_".$file->getClientOriginalName();
+            $tujuan_upload = public_path('storage/gambar_jurnal/');
+            $file->move($tujuan_upload,$nama_file);
+
             Jurnal::findOrFail($id)->update([
-                'gambar_jurnal' => $request->gambar_lama,
-                'judul' => $request->judul,
-                'isi' => $request->isi
+               'gambar_jurnal' => $nama_file,
             ]);
-            return redirect('jurnal_admin')->with('massage', 'Berhasil Mengubah Jurnal');
         }
-         $file=$request->file('gambar_jurnal');
-         $nama_file = time()."_".$file->getClientOriginalName();
-         $tujuan_upload = public_path('storage/gambar_jurnal/');
-         $file->move($tujuan_upload,$nama_file);
+
+        if($request->hasFile('gambar_jurnal')){
+            //Hapus file lama
+            File::delete(public_path('storage/file_jurnal/'. $request->file_jurnal_lama));
+
+            $pdf=$request->file('file_jurnal');
+            $nama_file_pdf = time()."_".$pdf->getClientOriginalName();
+            $tujuan_upload_file = public_path('storage/file_jurnal/');
+            $pdf->move($tujuan_upload_file,$nama_file_pdf);
+
+            Jurnal::findOrFail($id)->update([
+               'file_jurnal' => $nama_file_pdf,
+            ]);
+        }
 
 
         //create ke database
         Jurnal::findOrFail($id)->update([
-            'gambar_jurnal' => $nama_file,
             'judul' => $request->judul,
-            'isi' => $request->isi
         ]);
         
         return redirect('jurnal_admin')->with('massage', 'Berhasil Mengubah Jurnal');
