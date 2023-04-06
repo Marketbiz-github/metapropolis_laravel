@@ -36,6 +36,26 @@ body {
 
 /* END FLOATING WHATSAPP */
 
+
+/*  TAMBAHAN */
+.box-join-reseller h3{
+    color: #fff;
+}
+
+.box-join-reseller:hover h3{
+    color: #ffc451;
+}
+
+.box-join-dropshipper h3{
+    color: #fff;
+}
+
+.box-join-dropshipper:hover h3{
+    color: #ffc451;
+}
+
+/* END TAMBAHAN */
+
 a {
   color: #ffc451;
   text-decoration: none;
