@@ -117,10 +117,6 @@
 <script src="{{asset('landing/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
 <script src="{{asset('landing/assets/vendor/php-email-form/validate.js')}}"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 {{-- FONT AWESOME --}}
 <script src="https://kit.fontawesome.com/c1ac2a479a.js" crossorigin="anonymous"></script>
 
