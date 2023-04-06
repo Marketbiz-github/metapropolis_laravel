@@ -342,9 +342,9 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
         <!-- ======= Testimonials Section ======= -->
         <section id="testimonials" class="testimonials">
             <div class="container" data-aos="zoom-in">
-                <div class="section-title">
-                    <h2 style="color:white">Testimonial</h2>
-                    <p style="color:white">Testimonial</p>
+                <div class="section-title text-white">
+                    <h2 style="color:white !important;">Testimonial</h2>
+                    <p style="color:white !important;">Testimonial</p>
                 </div>
 
                 <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
