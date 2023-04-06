@@ -220,7 +220,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                                     <div class="count-box">
                                         <i class="fa-regular fa-address-card"
                                             style="color: #ffc451;margin-top: 5px;"></i>
-                                        <span style="font-size:24px;" class="mt-2">Register</span>
+                                        <span style="font-size:24px !important;" class="mt-2">Register</span>
                                         {{-- <h4 class="mt-2"> <b>Register</b></h4> --}}
                                         <p>Masukkan data diri secara lengkap dan lakukan aktivasi akun melalui email.
                                         </p>
@@ -231,7 +231,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                                     <div class="count-box">
                                         <i class="fa-solid fa-cart-shopping"
                                             style="color: #ffc451;margin-top: 5px;"></i>
-                                        <span style="font-size:24px;" class="mt-2">Beli Produk Paket Reseller</span>
+                                        <span style="font-size:24px !important;" class="mt-2">Beli Produk Paket Reseller</span>
                                         <p>Hanya dengan membeli 3 botol Meta Propolis kamu bisa langsung menjadi
                                             Reseller.</p>
                                     </div>
@@ -240,7 +240,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                                     <div class="count-box">
                                         <i class="fa-solid fa-gears" style="color: #ffc451;margin-top: 5px;"></i>
-                                        <span style="font-size:24px;" class="mt-2">Setup Website Toko Onlinemu</span>
+                                        <span style="font-size:24px !important;" class="mt-2">Setup Website Toko Onlinemu</span>
                                         <p>Dengan Bergabung menjadi Reseller Meta Propolis, Kamu akan langsung
                                             mendapatkan Website Toko Online.</p>
                                     </div>
@@ -249,7 +249,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                                     <div class="count-box">
                                         <i class="fa-solid fa-shop" style="color: #ffc451;margin-top: 5px;"></i>
-                                        <span style="font-size:24px;" class="mt-2">Jualan</span>
+                                        <span style="font-size:24px !important;" class="mt-2">Jualan</span>
                                         <p>Dapatkan penghasilan hingga puluhan juta setiap bulan dengan terus aktif
                                             dalam memasarkan produk Meta Propolis.</p>
                                     </div>
@@ -296,7 +296,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                                     <div class="count-box">
                                         <i class="fa-solid fa-graduation-cap"
                                             style="color: #ffc451;margin-top: 5px;"></i>
-                                        <span style="font-size:28px;" class="mt-2">Pelatihan Bisnis</span>
+                                        <span style="font-size:28px !important;" class="mt-2">Pelatihan Bisnis</span>
                                         {{-- <h4 class="mt-2"> <b>Register</b></h4> --}}
                                         <p>Setelah Daftar Reseller Kamu akan mendapatkan Pelatihan Bisnis GRATIS dari
                                             Mentor - Mentor Handal jadi jangan kawatir kamu bakalan dibimbing supaya
@@ -307,7 +307,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                                     <div class="count-box">
                                         <i class="fa-regular fa-star" style="color: #ffc451;margin-top: 5px;"></i>
-                                        <span style="font-size:28px;" class="mt-2">REWARD</span>
+                                        <span style="font-size:28px !important;" class="mt-2">REWARD</span>
                                         <p>Tungkatkan terus omzet penjualanmu, maka hadiah – hadiah menarik akan kamu
                                             dapatkan.</p>
                                     </div>
@@ -317,7 +317,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                                     <div class="count-box">
                                         <i class="fa-solid fa-screwdriver-wrench"
                                             style="color: #ffc451;margin-top: 5px;"></i>
-                                        <span style="font-size:28px;" class="mt-2">Tools Jualan</span>
+                                        <span style="font-size:28px !important;" class="mt-2">Tools Jualan</span>
                                         <p>Kamu bakal disupport berupa konten marketing, gambar, tools, video di channle
                                             telegram setiap harinya untuk bahan promosi kamu.</p>
                                     </div>
@@ -326,7 +326,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                                     <div class="count-box">
                                         <i class="fa-solid fa-code" style="color: #ffc451;margin-top: 5px;"></i>
-                                        <span style="font-size:28px;" class="mt-2">Website Toko Online</span>
+                                        <span style="font-size:28px !important;" class="mt-2">Website Toko Online</span>
                                         <p>Setlah gabung menjadi Reseller kamu akan otomatis mendapatkan Website Toko
                                             Online</p>
                                     </div>
