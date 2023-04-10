@@ -99,7 +99,7 @@
 
 {{-- FLOATING WHATSAPP --}}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send?phone=6281212392752&text=Hallo%20Metapropolis"
+<a href="https://api.whatsapp.com/send?phone=6281212392751&text=Hallo%20Metapropolis"
     class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
 </a>

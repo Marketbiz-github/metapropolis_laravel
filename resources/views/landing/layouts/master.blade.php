@@ -44,9 +44,8 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
 
             <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="50">
                 <div class="col-xl-6 col-lg-8">
-                    <h1>APA ITU<span> PROPOLIS</span></h1>
-                    <h2>KITA SERING MENDENGAR KATA PROPOLIS, TAPI SEBENARNYA APA ITU PROPOLIS ? DAN APA MANFAATNYA BAGI
-                        TUBUH KITA ?</h2>
+                    <h1>Perubahan Hidup Anda<span> Dimulai Dari Sini!</span></h1>
+                    <h2>Jadilah sehat dan kaya tanpa ribet disaat yang bersamaan bersama Meta Propolis.</h2>
                 </div>
             </div>
 
@@ -196,87 +195,6 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
         </section><!-- End Services Section -->
 
 
-        {{-- Join/Langkah bergabung Metapropolis  --}}
-
-        <section id="counts2" class="counts2">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                    <h2>Join</h2>
-                    <p>Join ke Meta Propolis</p>
-                </div>
-                <div class="row no-gutters">
-                    <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
-                        data-aos="fade-right" data-aos-delay="100"></div>
-                    <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left"
-                        data-aos-delay="100">
-                        <div class="content d-flex flex-column justify-content-center">
-                            <h3>Langkah Join Meta Propolis ?</h3>
-                            <p>
-                                Ingin Dapat Keuntungan Maksimal? Dengan Modal Minimal? Daftar Reseller dan Dropship Meta
-                                Propolis
-                            </p>
-                            <div class="row">
-                                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                    <div class="count-box">
-                                        <i class="fa-regular fa-address-card"
-                                            style="color: #ffc451;margin-top: 5px;"></i>
-                                        <span style="font-size:24px !important;" class="mt-2">Register</span>
-                                        {{-- <h4 class="mt-2"> <b>Register</b></h4> --}}
-                                        <p>Masukkan data diri secara lengkap dan lakukan aktivasi akun melalui email.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                    <div class="count-box">
-                                        <i class="fa-solid fa-cart-shopping"
-                                            style="color: #ffc451;margin-top: 5px;"></i>
-                                        <span style="font-size:24px !important;" class="mt-2">Beli Produk Paket Reseller</span>
-                                        <p>Hanya dengan membeli 3 botol Meta Propolis kamu bisa langsung menjadi
-                                            Reseller.</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                    <div class="count-box">
-                                        <i class="fa-solid fa-gears" style="color: #ffc451;margin-top: 5px;"></i>
-                                        <span style="font-size:24px !important;" class="mt-2">Setup Website Toko Onlinemu</span>
-                                        <p>Dengan Bergabung menjadi Reseller Meta Propolis, Kamu akan langsung
-                                            mendapatkan Website Toko Online.</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                    <div class="count-box">
-                                        <i class="fa-solid fa-shop" style="color: #ffc451;margin-top: 5px;"></i>
-                                        <span style="font-size:24px !important;" class="mt-2">Jualan</span>
-                                        <p>Dapatkan penghasilan hingga puluhan juta setiap bulan dengan terus aktif
-                                            dalam memasarkan produk Meta Propolis.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- End .content-->
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- End Counts Section -->
-
-        <!-- ======= Cta Section ======= -->
-        <section id="cta" class="cta">
-            <div class="container" data-aos="zoom-in">
-
-                <div class="text-center">
-                    <h3>Raih Omzet Hingga Puluhan Juta Setiap Bulan</h3>
-                    <p>Dengan Menjadi reseller Meta Propolis kamu akan memiliki banyak keuntungan, di antaranya adalah
-                        mendapatkan produk berkualitas dengan harga yang lebih murah, raih peluang mendaptakan omzet
-                        puluhan juta setiap bulan.</p>
-                    <a class="cta-btn" href="https://metapropolis.resellr.id/register-reseller">Join di Sini</a>
-                </div>
-
-            </div>
-        </section><!-- End Cta Section -->
-
         <!-- ======= Hal yang didapat Section ======= -->
         <section id="counts" class="counts">
             <div class="container" data-aos="fade-up">
@@ -335,7 +253,92 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                         </div><!-- End .content-->
                     </div>
                 </div>
+                <div class="button-cta-dapatkan text-center mt-5">
+                  <a href="https://metapropolis.resellr.id/register-reseller" class="btn btn-warning bg-warning.bg-gradient rounded-pill text-dark shadow btn-lg">Join Meta Propolis Sekarang!</a>
+                </div>
+            </div>
+        </section><!-- End Counts Section -->
 
+        
+
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
+            <div class="container" data-aos="zoom-in">
+
+                <div class="text-center">
+                    <h3>Raih Kesempatan Mendapatkan Penghasilan Hingga Puluhan Juta Setiap Bulan</h3>
+                    <p>Tanpa perlu ribet memikirkan produk, sistem, dan perhitungan keuangan. Kami akan support semuanya!</p>
+                    <a class="cta-btn" href="https://metapropolis.resellr.id/register-reseller">Join di Sini</a>
+                </div>
+
+            </div>
+        </section><!-- End Cta Section -->
+
+        {{-- Join/Langkah bergabung Metapropolis  --}}
+
+        <section id="counts2" class="counts2">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Join</h2>
+                    <p>Join Reseller Meta Propolis</p>
+                </div>
+                <div class="row no-gutters">
+                    <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
+                        data-aos="fade-right" data-aos-delay="100"></div>
+                    <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left"
+                        data-aos-delay="100">
+                        <div class="content d-flex flex-column justify-content-center">
+                            <h3>Langkah Join Meta Propolis ?</h3>
+                            <p>
+                                Ingin Dapat Keuntungan Maksimal? Dengan Modal Minimal? Daftar Reseller dan Dropship Meta
+                                Propolis
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <div class="count-box">
+                                        <i class="fa-regular fa-address-card"
+                                            style="color: #ffc451;margin-top: 5px;"></i>
+                                        <span style="font-size:24px !important;" class="mt-2">Register</span>
+                                        {{-- <h4 class="mt-2"> <b>Register</b></h4> --}}
+                                        <p>Masukkan data diri secara lengkap dan lakukan aktivasi akun melalui email.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <div class="count-box">
+                                        <i class="fa-solid fa-cart-shopping"
+                                            style="color: #ffc451;margin-top: 5px;"></i>
+                                        <span style="font-size:24px !important;" class="mt-2">Beli Produk Paket Reseller</span>
+                                        <p>Hanya dengan membeli 3 botol Meta Propolis kamu bisa langsung menjadi
+                                            Reseller.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <div class="count-box">
+                                        <i class="fa-solid fa-gears" style="color: #ffc451;margin-top: 5px;"></i>
+                                        <span style="font-size:24px !important;" class="mt-2">Setup Website Toko Onlinemu</span>
+                                        <p>Dengan Bergabung menjadi Reseller Meta Propolis, Kamu akan langsung
+                                            mendapatkan Website Toko Online.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <div class="count-box">
+                                        <i class="fa-solid fa-shop" style="color: #ffc451;margin-top: 5px;"></i>
+                                        <span style="font-size:24px !important;" class="mt-2">Jualan</span>
+                                        <p>Dapatkan penghasilan hingga puluhan juta setiap bulan dengan terus aktif
+                                            dalam memasarkan produk Meta Propolis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- End .content-->
+                    </div>
+                </div>
+                <div class="button-cta-langkah-join text-center mt-5">
+                  <a href="https://metapropolis.resellr.id/register-reseller" class="btn btn-warning bg-warning.bg-gradient rounded-pill text-dark shadow btn-lg">Join Meta Propolis Sekarang!</a>
+                </div>
             </div>
         </section><!-- End Counts Section -->
         <br><br>
