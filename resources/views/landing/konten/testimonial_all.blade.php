@@ -122,7 +122,7 @@ Testimonial Meta Propolis - Meta Propolis
                         @foreach($image as $data)
                         <div class="col-lg-3" data-aos="fade-left" data-aos-delay="10">
                             <img src="{{asset('storage/gambar_testimoni/'. $data->data_testimoni)}}"
-                                height="auto" alt="" style="max-width: 100%;" loading="lazy">
+                                height="auto" alt="testi" style="max-width: 100%;" loading="lazy">
                             <p class="">
                                 {!! $data->kutipan !!}
                             </p>

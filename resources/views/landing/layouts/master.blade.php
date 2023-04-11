@@ -85,7 +85,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                 <div class="row">
                     <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="10">
                         <img src="{{asset('storage/gambar_pengertian/'. $data_pengertian->gambar_pengertian)}}"
-                            class="img-fluid" alt="">
+                            class="img-fluid" alt="pengertian">
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right"
                         data-aos-delay="100">
@@ -118,7 +118,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                             <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="10">
                                 <i class="mr-2"><img
                                         src="{{asset('storage/gambar_manfaat/ikon/'. $data_m->ikon_manfaat)}}"
-                                        class="mb-2" width="50" height="auto" alt=""></i>
+                                        class="mb-2" width="50" height="auto" alt="manfaat"></i>
                                 <br>
                                 <span style="font-size:27px;" class="ml-2">
                                     <h4 class="fs-4"><b>{{$data_m->nama_manfaat}}</b> </h4>
@@ -158,7 +158,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                                 <div class=""><i class=""></i>
                                     <img width="100" height="auto"
                                         src="{{asset('storage/gambar_perlu_anda_tahu/ikon/'. $perlu->ikon_perlu)}}"
-                                        alt="">
+                                        alt="perlu-tahu">
                                 </div><br>
                                 <h4 style="color: black">{{$perlu->nama_perlu}}</h4>
                                 <p style="color: black">
@@ -365,7 +365,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                                 {!! $data_testi->data_testimoni !!}
                                 @else
                                 <img src="{{asset('storage/gambar_testimoni/'. $data_testi->data_testimoni)}}"
-                                    width="400" height="auto" alt="">
+                                    width="400" height="auto" alt="testimoni">
                                 @endif
                                 {{-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> --}}
                                 {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4nqg6lsbFsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> --}}
@@ -426,7 +426,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
 
                             <div class="post-img position-relative overflow-hidden">
                                 <img src="{{asset('storage/gambar_blog/'.$blog->gambar_blog )}}" class="img-fluid w-100"
-                                    alt="">
+                                    alt="blog">
                                 <span class="post-date">{{$blog->tgl_upload}}</span>
                             </div>
 

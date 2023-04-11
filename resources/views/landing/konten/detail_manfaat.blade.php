@@ -56,7 +56,7 @@
           </div>
           <div class="row">
             <div class="col-md-6">
-              <img src="{{asset('storage/gambar_manfaat/'.$datas->gambar_manfaat)}}" class="gambar_o" alt="">
+              <img src="{{asset('storage/gambar_manfaat/'.$datas->gambar_manfaat)}}" class="gambar_o" alt="manfaat">
             </div>
             {{-- <div class="image gambar_o col-lg-12" style='background-image: url("{{asset('storage/gambar_blog/'.$datas->gambar_blog)}}");' data-aos="fade-right"></div> --}}
             <div class="col-lg-6 mt-2" data-aos="fade-left" data-aos-delay="10">

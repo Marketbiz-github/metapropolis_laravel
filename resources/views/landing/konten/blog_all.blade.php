@@ -60,7 +60,7 @@
             <div class="post-item position-relative h-100">
   
               <div class="post-img position-relative overflow-hidden">
-                <img src="{{asset('storage/gambar_blog/'.$blog->gambar_blog )}}" class="img-fluid w-100" alt="">
+                <img src="{{asset('storage/gambar_blog/'.$blog->gambar_blog )}}" class="img-fluid w-100" alt="blog">
                 <span class="post-date">{{$blog->tgl_upload}}</span>
               </div>
   

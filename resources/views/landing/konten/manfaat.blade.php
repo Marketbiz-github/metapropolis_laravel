@@ -55,7 +55,7 @@
               @foreach($data_manfaat as $data_m)
               <a href="{{route('detail_manfaat',$data_m->id)}}">
               <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="10">
-                <i class="mr-2"><img src="{{asset('storage/gambar_manfaat/ikon/'. $data_m->ikon_manfaat)}}" class="mb-2" width="50" height="auto" alt=""></i>
+                <i class="mr-2"><img src="{{asset('storage/gambar_manfaat/ikon/'. $data_m->ikon_manfaat)}}" class="mb-2" width="50" height="auto" alt="manfaat"></i>
                 {{-- <img src="{{('image_propolis/1669617335-75x75.png')}}" alt=""> --}}
                 <br>
                 <span style="font-size:27px;" class="ml-2 mt-2"><h4 class="fs-4"><b>{{$data_m->nama_manfaat}}</b> </h4></span>
