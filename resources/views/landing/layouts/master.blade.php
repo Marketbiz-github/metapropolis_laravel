@@ -194,6 +194,20 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
             </div>
         </section><!-- End Services Section -->
 
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
+            <div class="container" data-aos="zoom-in">
+
+                <div class="text-center">
+                    <h3>Raih Kesempatan Mendapatkan Penghasilan Hingga Puluhan Juta Setiap Bulan</h3>
+                    <p>Tanpa perlu ribet memikirkan produk, sistem, dan perhitungan keuangan. Kami akan support semuanya!</p>
+                    <a class="cta-btn" href="https://metapropolis.resellr.id/register-reseller">Join di Sini</a>
+                </div>
+
+            </div>
+        </section><!-- End Cta Section -->
+
+
 
         <!-- ======= Hal yang didapat Section ======= -->
         <section id="counts" class="counts">
@@ -260,20 +274,6 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
         </section><!-- End Counts Section -->
 
         
-
-        <!-- ======= Cta Section ======= -->
-        <section id="cta" class="cta">
-            <div class="container" data-aos="zoom-in">
-
-                <div class="text-center">
-                    <h3>Raih Kesempatan Mendapatkan Penghasilan Hingga Puluhan Juta Setiap Bulan</h3>
-                    <p>Tanpa perlu ribet memikirkan produk, sistem, dan perhitungan keuangan. Kami akan support semuanya!</p>
-                    <a class="cta-btn" href="https://metapropolis.resellr.id/register-reseller">Join di Sini</a>
-                </div>
-
-            </div>
-        </section><!-- End Cta Section -->
-
         {{-- Join/Langkah bergabung Metapropolis  --}}
 
         <section id="counts2" class="counts2">
@@ -342,6 +342,8 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
             </div>
         </section><!-- End Counts Section -->
         <br><br>
+
+
         <!-- ======= Testimonials Section ======= -->
         <section id="testimonials" class="testimonials">
             <div class="container" data-aos="zoom-in">
