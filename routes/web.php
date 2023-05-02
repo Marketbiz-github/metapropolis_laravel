@@ -17,6 +17,7 @@ use App\Http\Controllers\Landing\TentangMetapropolisController;
 use App\Http\Controllers\Landing\DetailBlogController;
 use App\Http\Controllers\Landing\JurnalController;
 use App\Http\Controllers\Landing\FaqController;
+use App\Http\Controllers\Landing\ProductKnowledgeController;
 use App\Http\Controllers\Admin\JurnalAdminController;
 use App\Http\Controllers\Admin\TestimoniAdminController;
 use App\Http\Controllers\Admin\FaqAdminController;
@@ -81,4 +82,7 @@ Route::post('/testimoni_admin_gambar_create', [TestimoniAdminController::class, 
 Route::post('/testimoni_admin_gambar_update/{id}', [TestimoniAdminController::class, 'update_gambar_testi'])->name('testimoni_admin_gambar_update');
 Route::post('/testimoni_admin_gambar_delete/{id}', [TestimoniAdminController::class, 'delete_gambar_testi'])->name('testimoni_admin_gambar_delete');
 });
+
+
+Route::get('/public/product-knowledge', [ProductKnowledgeController::class, 'index'])->name('produk.knowlede');
 // Route::post('landing_banner', BannerController::class);
