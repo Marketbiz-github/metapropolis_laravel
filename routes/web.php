@@ -84,5 +84,5 @@ Route::post('/testimoni_admin_gambar_delete/{id}', [TestimoniAdminController::cl
 });
 
 
-Route::get('/public/product-knowledge', [ProductKnowledgeController::class, 'index'])->name('produk.knowlede');
+Route::get('/product-knowledge', [ProductKnowledgeController::class, 'index'])->name('produk.knowlede');
 // Route::post('landing_banner', BannerController::class);
