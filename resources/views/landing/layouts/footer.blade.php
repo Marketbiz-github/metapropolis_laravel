@@ -58,14 +58,26 @@
              <a href="https://www.tiktok.com/@metabiolifeindonesia"><span class="fa-brands fa-tiktok"> Tiktok meta</span></a> <br>
             </h5> --}}
                     <div class="social-links mt-3">
-                        <a href="https://www.facebook.com/profile.php?id=100091457464973" class="facebook"><i
+                        {{-- <a href="https://www.facebook.com/profile.php?id=100091457464973" class="facebook"><i
                                 class="bx bxl-facebook"></i></a>
                         <a href="https://www.youtube.com/@metapropolis3536" class="youtube"><i
                                 class="bx bxl-youtube"></i></a>
                         <a href="https://www.instagram.com/metapropolis/" class="instagram"><i
                                 class="bx bxl-instagram"></i></a>
                         <a href="https://www.tiktok.com/@metabiolifeindonesia" class="tiktok"><i
-                                class="bx bxl-tiktok"></i></a>
+                                class="bx bxl-tiktok"></i></a> --}}
+                        <a href="https://www.facebook.com/profile.php?id=100091457464973" class="facebook">
+                           <img src="{{asset('landing/facebook.png')}}" alt="" width="18">
+                        </a>
+                        <a href="https://www.youtube.com/@metapropolis3536" class="youtube">
+                           <img src="{{asset('landing/youtube.png')}}" alt="" width="18">
+                        </a>
+                        <a href="https://www.instagram.com/metapropolis/" class="instagram">
+                           <img src="{{asset('landing/instagram.png')}}" alt="" width="18">
+                        </a>
+                        <a href="https://www.tiktok.com/@metabiolifeindonesia" class="tiktok">
+                           <img src="{{asset('landing/tiktok.png')}}" alt="" width="18">
+                        </a>
                     </div>
                     {{-- <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
