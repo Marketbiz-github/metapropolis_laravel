@@ -10,7 +10,7 @@
                             Grand ITC Permata Hijau <br>
                             Jl.Arterti Permata Hijau <br>
                             Jakarta Selatan 12210 <br><br>
-                            <strong>Phone:</strong> +62 812-1239-2752<br>
+                            <strong>Phone:</strong> <a href="https://api.whatsapp.com/send?phone=6282125299227&text=Hallo%20Metapropolis"> +62 821-2529-9227</a><br>
                             <strong>Email:</strong> info@metapropolis.id<br>
                         </p>
                         {{-- <div class="social-links mt-3">
