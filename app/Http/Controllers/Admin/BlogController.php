@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Str;
 
 class BlogController extends Controller
 {
@@ -51,19 +52,23 @@ class BlogController extends Controller
             'isi' => 'required'
         ]);
 
+        //Generate Slug
+         $slug = Str::slug($request->judul, '-');
+
         //upload Gambar
         $file=$request->file('gambar_blog');
         $nama_file = time()."_".$file->getClientOriginalName();
         $tujuan_upload = public_path('storage/gambar_blog/');
-		$file->move($tujuan_upload,$nama_file);
+		  $file->move($tujuan_upload,$nama_file);
 
         //create ke database
         Blog::create([
 			'gambar_blog' => $nama_file,
 			'judul' => $request->judul,
+			'slug' => $slug,
 			'isi' => $request->isi,
-            'tgl_upload' =>  Carbon::now()->isoFormat('D MMMM Y')
-		]);
+         'tgl_upload' =>  Carbon::now()->isoFormat('D MMMM Y')
+		  ]);
     
         // Carbon::now()->isoFormat('dddd, D MMMM Y') (Format Tanggal Indo)
         
@@ -111,6 +116,9 @@ class BlogController extends Controller
             'isi' => 'required'
         ]);
 
+        //Generate Slug
+         $slug = Str::slug($request->judul, '-');
+
         // if(){
 
         // }
@@ -122,6 +130,7 @@ class BlogController extends Controller
             Blog::findOrFail($id)->update([
                 'gambar_blog' => $request->gambar_lama,
                 'judul' => $request->judul,
+                'slug' => $slug,
                 'isi' => $request->isi
             ]);
             return redirect('blog')->with('massage', 'Berhasil Mengubah Blog');
@@ -136,6 +145,7 @@ class BlogController extends Controller
         Blog::findOrFail($id)->update([
             'gambar_blog' => $nama_file,
             'judul' => $request->judul,
+            'slug' => $slug,
             'isi' => $request->isi
         ]);
         

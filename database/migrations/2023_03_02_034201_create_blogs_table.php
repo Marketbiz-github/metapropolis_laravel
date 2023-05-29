@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('gambar_blog');
             $table->string('judul');
+            $table->string('slug')->nullable();
             $table->text('isi');
             $table->string('tgl_upload');
             $table->timestamps();

@@ -54,6 +54,8 @@ Route::get('/testimonial_all', [TestimoniAdminController::class, 'testimonial_al
 
 Route::get('/detail-product/{id}', [ProdukController::class, 'show'])->name('detail.product');
 
+Route::get('/generate-blog-slug', [DetailBlogController::class, 'generateSlug'])->name('slug.blog');
+
 
 //AUTH
 Route::get('/login', [LoginController::class, 'index'])->name('login');
