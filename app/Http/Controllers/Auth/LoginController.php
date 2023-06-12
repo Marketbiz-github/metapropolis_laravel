@@ -12,6 +12,14 @@ class LoginController extends Controller
     {
         return view('auth.login');
     }
+    public function indexReseller()
+    {
+        return view('auth.loginReseller');
+    }
+    public function indexDropshipper()
+    {
+        return view('auth.loginDropshipper');
+    }
     public function register()
     {
         return view('auth.register');

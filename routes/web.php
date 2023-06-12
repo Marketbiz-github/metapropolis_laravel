@@ -71,6 +71,9 @@ Route::get('/register_dropshipper', [LoginController::class, 'register_dropshipp
 Route::post('/login', [LoginController::class, 'autenticate'])->name('login');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
+Route::get('/login-reseller', [LoginController::class, 'indexReseller'])->name('login.reseller');
+Route::get('/login-dropshipper', [LoginController::class, 'indexDropshipper'])->name('login.dropshipper');
+
 
 //ADMIN
 Route::middleware(['auth'])->group(function () {

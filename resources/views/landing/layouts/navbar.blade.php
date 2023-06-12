@@ -14,8 +14,10 @@
         {{-- <li><a class="nav-link scrollto" href="#">Kontak</a></li> --}}
         <li class="dropdown"><a href="#"><span>Login</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-                <li><a href="https://metapropolis.resellr.id/login-reseller">Login Reseller</a></li>
-                <li><a href="https://metapropolis.resellr.id/login-dropshipper">Login Dropshipper</a></li>
+                {{-- <li><a href="https://metapropolis.resellr.id/login-reseller">Login Reseller</a></li> --}}
+                <li><a href="{{ route('login.reseller') }}">Login Reseller</a></li>
+                {{-- <li><a href="https://metapropolis.resellr.id/login-dropshipper">Login Dropshipper</a></li> --}}
+                <li><a href="{{ route('login.dropshipper') }}">Login Dropshipper</a></li>
             </ul>
         </li>
     </ul>
