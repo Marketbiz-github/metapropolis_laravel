@@ -74,6 +74,11 @@
                                         <i class="las la-minus"></i><span>Berita/Blog</span>
                                     </a>
                             </li>
+                            <li class="">
+                                    <a href="{{route('ranch_market.index')}}">
+                                        <i class="las la-minus"></i><span>Ranch Market</span>
+                                    </a>
+                            </li>
                     </ul>
                 </li>
             </ul>

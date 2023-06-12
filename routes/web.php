@@ -21,6 +21,13 @@ use App\Http\Controllers\Landing\ProductKnowledgeController;
 use App\Http\Controllers\Admin\JurnalAdminController;
 use App\Http\Controllers\Admin\TestimoniAdminController;
 use App\Http\Controllers\Admin\FaqAdminController;
+use App\Http\Controllers\Admin\RanchMarketController as RanchMarketAdminController;
+use App\Models\Province;
+use GuzzleHttp\Client;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Storage;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -76,6 +83,7 @@ Route::resource('perlu_anda_tahu', PerluAndaTahuController::class);
 Route::resource('blog', BlogController::class);
 Route::resource('jurnal_admin', JurnalAdminController::class);
 Route::resource('faq_admin', FaqAdminController::class);
+Route::resource('ranch_market', RanchMarketAdminController::class);
 
 Route::resource('testimoni_admin', TestimoniAdminController::class);
 Route::get('/testimoni_admin_gambar_view_create', [TestimoniAdminController::class, 'create_gambar_testi'])->name('testimoni_admin_gambar_view_create');
@@ -88,3 +96,8 @@ Route::post('/testimoni_admin_gambar_delete/{id}', [TestimoniAdminController::cl
 
 Route::get('/product-knowledge', [ProductKnowledgeController::class, 'index'])->name('produk.knowlede');
 // Route::post('landing_banner', BannerController::class);
+
+Route::get('/test', function(){
+    $province = Province::whereHas('ranchMarket')->get();
+    dd($province);
+});

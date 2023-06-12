@@ -13,6 +13,9 @@ use App\Models\Manfaat;
 use App\Models\PerluAndaTahu;
 use App\Models\Testimoni;
 use App\Models\Faq;
+use App\Models\Province;
+use App\Models\RanchMarket;
+use App\Models\Regency;
 
 class DatabaseSeeder extends Seeder
 {
@@ -158,5 +161,91 @@ class DatabaseSeeder extends Seeder
             'pertanyaan' => 'Apa itu Propolis ?',
             'jawaban' =>  'Propolis atau sering disebut lem lebah adalah zat yang dihasilkan oleh lebah madu. Zat ini dikumpulkan oleh lebah dari pucuk daun muda atau getah pohon dan kemudian dicampur dengan air liur mereka (resin) yang digunakan untuk menambal dan mensterilkan sarang. Hasilnya bertekstur lengket, berwarna coklat kehijauan dan digunakan sebagai pelapis untuk membangun sarang lebah.'
         ]);
+
+        $provinceCsv = fopen(base_path("database/data/provinces.csv"), "r");
+
+        $firstlineProvince = true;
+        while (($data = fgetcsv($provinceCsv, 2000, ",")) !== FALSE) {
+            if (!$firstlineProvince) {
+                Province::create([
+                    'id' => $data[0],
+                    'name' => $data[1]
+                ]);
+            }
+            $firstlineProvince = false;
+        }
+
+        $regencyCsv = fopen(base_path("database/data/regencies.csv"), "r");
+
+        $firstlineRegency = true;
+        while (($data = fgetcsv($regencyCsv, 2000, ",")) !== FALSE) {
+            if (!$firstlineRegency) {
+                Regency::create([
+                    'id' => $data[0],
+                    'province_id' => $data[1],
+                    'name' => $data[2]
+                ]);
+            }
+            $firstlineRegency = false;
+        }
+
+        $ranchMarkets = [
+            [
+                'name' => 'Ranch Market Pondok Indah Mall 3',
+                'regency_id' => 3171,
+                'address' => 'LG Floor West Lobby
+                        Jl. Kartika Utama RT.1/RW.16
+                        Pondok Pinang, Kebayoran Lama
+                        Jakarta Selatan',
+                'post_code' => null,
+                'telp' => '0823927392',
+                'embed' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.008741170261!2d106.78160997512973!3d-6.262577893726048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f11a9814be53%3A0x683854d4d8b148ac!2sRanch%20Market%20-%20Pondok%20Indah!5e0!3m2!1sen!2sid!4v1686535885406!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+            ],
+            [
+                'name' => 'Ranch Market Lippo Mall Puri',
+                'regency_id' => 3174,
+                'address' => 'Lippo Mall Puri, GF
+                        Jl. Puri Indah Raya Blok U1
+                        Puri Indah CBD
+                        Jakarta',
+                'post_code' => '11610',
+                'telp' => '0823927392',
+                'embed' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.008741170261!2d106.78160997512973!3d-6.262577893726048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f11a9814be53%3A0x683854d4d8b148ac!2sRanch%20Market%20-%20Pondok%20Indah!5e0!3m2!1sen!2sid!4v1686535885406!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+            ],
+            [
+                'name' => 'Ranch Market The Breeze',
+                'regency_id' => 3671,
+                'address' => 'BSD Green Office Park
+                        Jl. Grand Boulevard BSD City,
+                        Tangerang',
+                'post_code' => '12345',
+                'telp' => '0823927392',
+                'embed' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.008741170261!2d106.78160997512973!3d-6.262577893726048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f11a9814be53%3A0x683854d4d8b148ac!2sRanch%20Market%20-%20Pondok%20Indah!5e0!3m2!1sen!2sid!4v1686535885406!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+            ],
+            [
+                'name' => 'Ranch Market Citywalk Elvee',
+                'regency_id' => 3671,
+                'address' => 'Millenium Village
+                        Jl. Boulevard Jend. Sudirman 1525 Unit GF 05-06
+                        Kelapa Dua, Tangerang',
+                'post_code' => '15811',
+                'telp' => '0823927392',
+                'embed' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.008741170261!2d106.78160997512973!3d-6.262577893726048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f11a9814be53%3A0x683854d4d8b148ac!2sRanch%20Market%20-%20Pondok%20Indah!5e0!3m2!1sen!2sid!4v1686535885406!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+            ],
+            [
+                'name' => 'Ranch Market Citywalk Elvee',
+                'regency_id' => 3671,
+                'address' => 'Millenium Village
+                        Jl. Boulevard Jend. Sudirman 1525 Unit GF 05-06
+                        Kelapa Dua, Tangerang',
+                'post_code' => '15811',
+                'telp' => '0823927392',
+                'embed' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.008741170261!2d106.78160997512973!3d-6.262577893726048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f11a9814be53%3A0x683854d4d8b148ac!2sRanch%20Market%20-%20Pondok%20Indah!5e0!3m2!1sen!2sid!4v1686535885406!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+            ],
+        ];
+
+        foreach($ranchMarkets as $ranchMarket){
+            RanchMarket::create($ranchMarket);
+        }
     }
 }

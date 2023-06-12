@@ -60,7 +60,8 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                 </div>
 
                 <div class="col-xl-2 col-md-4">
-                    <a href="https://metapropolis.resellr.id/register-dropshipper?id=26480" class="box-join-dropshipper">
+                    <a href="https://metapropolis.resellr.id/register-dropshipper?id=26480"
+                        class="box-join-dropshipper">
                         <div class="icon-box">
                             <i class="fa fa-handshake-o"></i>
                             <h3>Join Dropshipper</h3>
@@ -200,7 +201,8 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
 
                 <div class="text-center">
                     <h3>Raih Kesempatan Mendapatkan Penghasilan Hingga Puluhan Juta Setiap Bulan</h3>
-                    <p>Tanpa perlu ribet memikirkan produk, sistem, dan perhitungan keuangan. Kami akan support semuanya!</p>
+                    <p>Tanpa perlu ribet memikirkan produk, sistem, dan perhitungan keuangan. Kami akan support
+                        semuanya!</p>
                     <a class="cta-btn" href="https://metapropolis.resellr.id/register-reseller">Join di Sini</a>
                 </div>
 
@@ -268,12 +270,14 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                     </div>
                 </div>
                 <div class="button-cta-dapatkan text-center mt-5">
-                  <a href="https://metapropolis.resellr.id/register-reseller" class="btn btn-warning bg-warning.bg-gradient rounded-pill text-dark shadow btn-lg">Join Meta Propolis Sekarang!</a>
+                    <a href="https://metapropolis.resellr.id/register-reseller"
+                        class="btn btn-warning bg-warning.bg-gradient rounded-pill text-dark shadow btn-lg">Join Meta
+                        Propolis Sekarang!</a>
                 </div>
             </div>
         </section><!-- End Counts Section -->
 
-        
+
         {{-- Join/Langkah bergabung Metapropolis  --}}
 
         <section id="counts2" class="counts2">
@@ -309,7 +313,8 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                                     <div class="count-box">
                                         <i class="fa-solid fa-cart-shopping"
                                             style="color: #ffc451;margin-top: 5px;"></i>
-                                        <span style="font-size:24px !important;" class="mt-2">Beli Produk Paket Reseller</span>
+                                        <span style="font-size:24px !important;" class="mt-2">Beli Produk Paket
+                                            Reseller</span>
                                         <p>Hanya dengan membeli 3 botol Meta Propolis kamu bisa langsung menjadi
                                             Reseller.</p>
                                     </div>
@@ -318,7 +323,8 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                                     <div class="count-box">
                                         <i class="fa-solid fa-gears" style="color: #ffc451;margin-top: 5px;"></i>
-                                        <span style="font-size:24px !important;" class="mt-2">Setup Website Toko Onlinemu</span>
+                                        <span style="font-size:24px !important;" class="mt-2">Setup Website Toko
+                                            Onlinemu</span>
                                         <p>Dengan Bergabung menjadi Reseller Meta Propolis, Kamu akan langsung
                                             mendapatkan Website Toko Online.</p>
                                     </div>
@@ -337,7 +343,9 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                     </div>
                 </div>
                 <div class="button-cta-langkah-join text-center mt-5">
-                  <a href="https://metapropolis.resellr.id/register-reseller" class="btn btn-warning bg-warning.bg-gradient rounded-pill text-dark shadow btn-lg">Join Meta Propolis Sekarang!</a>
+                    <a href="https://metapropolis.resellr.id/register-reseller"
+                        class="btn btn-warning bg-warning.bg-gradient rounded-pill text-dark shadow btn-lg">Join Meta
+                        Propolis Sekarang!</a>
                 </div>
             </div>
         </section><!-- End Counts Section -->
@@ -410,7 +418,6 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
       </div>
     </section><!-- End Contact Section --> --}}
 
-
         <section id="recent-blog-posts" class="recent-blog-posts">
             <div class="container" data-aos="fade-up">
 
@@ -437,7 +444,8 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                                 <div class="meta d-flex align-items-center">
                                 </div>
                                 <hr>
-                                <a href="{{route('detail_blog',$blog->slug)}}" class="readmore stretched-link"><span>Read
+                                <a href="{{route('detail_blog',$blog->slug)}}"
+                                    class="readmore stretched-link"><span>Read
                                         More</span><i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
@@ -450,6 +458,64 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                         </span><i class="bi bi-arrow-right"></i></a>
                 </div>
 
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="section-title">
+                    <h2>Store Location</h2>
+                    <p>List Lokasi Toko</p>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label>Pilih Provinsi</label>
+                        <select name="province" id="province" class="form-control">
+                            @foreach ($provinces as $province)
+                            <option value="{{ $province->id }}">{{ $province->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start mt-4">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active" style="text-align:left" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true">
+                            <span class="d-block">Jakarta Selatan</span>
+                            <span class="d-block" style="font-weight:800; font-size:20px;">Ranch Market Pondok Indah Mall 3</span>
+                        </button>
+                        <button class="nav-link" style="text-align:left" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">
+                            <span class="d-block">Jakarta Selatan</span>
+                            <span class="d-block" style="font-weight:800; font-size:20px;">Ranch Market Lippo Mall Puri</span>
+                        </button>
+                        <button class="nav-link" style="text-align:left" id="v-pills-messages-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                            aria-selected="false">
+                            <span class="d-block">Jakarta Selatan</span>
+                            <span class="d-block" style="font-weight:800; font-size:20px;">Ranch Market The Breeze</span>
+                        </button>
+                        <button class="nav-link" style="text-align:left" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
+                            <span class="d-block">Jakarta Selatan</span>
+                            <span class="d-block" style="font-weight:800; font-size:20px;">Ranch Market Citywalk Elvee</span>
+                        </button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum animi quos quisquam, rem veniam incidunt ut ea eum officia, debitis quaerat, unde eveniet praesentium dicta dignissimos facilis dolores sequi?</div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum animi quos quisquam, rem veniam incidunt ut ea eum officia, debitis quaerat, unde eveniet praesentium dicta dignissimos facilis dolores sequi?</div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum animi quos quisquam, rem veniam incidunt ut ea eum officia, debitis quaerat, unde eveniet praesentium dicta dignissimos facilis dolores sequi?</div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                            aria-labelledby="v-pills-settings-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum animi quos quisquam, rem veniam incidunt ut ea eum officia, debitis quaerat, unde eveniet praesentium dicta dignissimos facilis dolores sequi?</div>
+                    </div>
+                </div>
             </div>
         </section>
 
