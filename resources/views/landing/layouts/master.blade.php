@@ -461,7 +461,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
             </div>
         </section>
 
-        <section>
+        {{-- <section>
             <div class="container">
                 <div class="section-title">
                     <h2>Store Location</h2>
@@ -517,7 +517,7 @@ untuk daya tahan tubuh, madu propolis manfaat, madu propolis terbaik, manfaat he
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
     </main><!-- End #main -->
 

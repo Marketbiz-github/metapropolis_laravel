@@ -9,7 +9,7 @@ class RanchMarket extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
+    protected $fillable = ['name', 'regency_id', 'address', 'post_code', 'telp', 'embed'];
 
     public function regency()
     {
