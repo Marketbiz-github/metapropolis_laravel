@@ -22,6 +22,7 @@ use App\Http\Controllers\Admin\JurnalAdminController;
 use App\Http\Controllers\Admin\TestimoniAdminController;
 use App\Http\Controllers\Admin\FaqAdminController;
 use App\Http\Controllers\Admin\RanchMarketController as RanchMarketAdminController;
+use App\Http\Controllers\RegencyController;
 use App\Models\Province;
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\File;
@@ -96,6 +97,7 @@ Route::post('/testimoni_admin_gambar_update/{id}', [TestimoniAdminController::cl
 Route::post('/testimoni_admin_gambar_delete/{id}', [TestimoniAdminController::class, 'delete_gambar_testi'])->name('testimoni_admin_gambar_delete');
 });
 
+Route::get('get-regencies/{province}', [RegencyController::class, 'index'])->name('get-regencies');
 
 Route::get('/product-knowledge', [ProductKnowledgeController::class, 'index'])->name('produk.knowlede');
 // Route::post('landing_banner', BannerController::class);

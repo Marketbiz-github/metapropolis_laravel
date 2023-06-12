@@ -4,7 +4,7 @@
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <title>
-        @yield('title')
+        @stack('title')
     </title>
       
       <!-- Favicon -->
@@ -14,10 +14,10 @@
       <link rel="stylesheet" href="{{asset('admin/html/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css')}}">
       <link rel="stylesheet" href="{{asset('admin/html/assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css')}}">
       <link rel="stylesheet" href="{{asset('admin/html/assets/vendor/remixicon/fonts/remixicon.css')}}"> 
-
-
-      {{-- trix editor --}}
       <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
+
+      @yield('styles')
+      
       <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
       
       <style>
@@ -71,5 +71,7 @@
         
       })
     </script>
+
+    @stack('scripts')
   </body>
 </html>

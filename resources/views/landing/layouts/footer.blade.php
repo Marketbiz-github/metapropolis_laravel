@@ -72,7 +72,7 @@
                         <a href="https://www.youtube.com/@metapropolis3536" class="youtube">
                            <img src="{{asset('landing/youtube.png')}}" alt="" width="18">
                         </a>
-                        <a href="https://www.instagram.com/metapropolis/" class="instagram">
+                        <a href="https://www.instagram.com/metapropolistestimoni/" class="instagram">
                            <img src="{{asset('landing/instagram.png')}}" alt="" width="18">
                         </a>
                         <a href="https://www.tiktok.com/@metabiolifeindonesia" class="tiktok">
