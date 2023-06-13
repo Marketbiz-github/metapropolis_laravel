@@ -33,7 +33,7 @@
                         {{session('login_error')}}
                       </div>
                     @endif
-                     <div class="card-body p-0">
+                     <div class="card-body p-0 ">
                         <div class="d-flex align-items-center auth-content">
                           <div class="col-lg-7 content-right p-0">
                               <img src="{{asset('image_propolis/banner-login.jpg')}}" class="img-fluid image-right" alt="">
