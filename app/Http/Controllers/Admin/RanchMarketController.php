@@ -90,6 +90,8 @@ class RanchMarketController extends Controller
      */
     public function destroy(RanchMarket $ranchMarket)
     {
-        //
+        $ranchMarket->delete();
+
+        return redirect()->back();
     }
 }
