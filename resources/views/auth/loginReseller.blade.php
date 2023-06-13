@@ -36,7 +36,7 @@
                      <div class="card-body p-0">
                         <div class="d-flex align-items-center auth-content">
                           <div class="col-lg-7 content-right p-0">
-                              <img src="{{('image_propolis/banner-login.jpg')}}" class="img-fluid image-right" alt="">
+                              <img src="{{asset('image_propolis/banner-login.jpg')}}" class="img-fluid image-right" alt="">
                            </div>
                            <div class="col-lg-5 align-self-center">
                               <div class="p-3">
