@@ -39,15 +39,26 @@ Ranch Market
                     @foreach($ranchMarkets as $ranchMarket)
                     <tbody class="ligth-body">
                         <tr>
-                            <td><a href="#" class="btn btn-info btn-sm">show</a></td>
+                            <td><a href="#" class="btn btn-info btn-sm" onclick="event.preventDefault(); openMap({{ $ranchMarket->id }})">show</a></td>
                             <td>{{$ranchMarket->name}}</td>
                             <td>{{ $ranchMarket->regency->province->name }}</td>
                             <td>{{ $ranchMarket->regency->name }}</td>
                             <td>{{ $ranchMarket->telp }}</td>
                             <td>
-                                <a href="#" class="btn btn-info btn-sm">detail</a>&nbsp;
-                                <a href="#" onclick="event.preventDefault();editRanchMarket({{ $ranchMarket->id }})" class="btn btn-primary btn-sm">edit</a>&nbsp;
-                                <a href="#" class="btn btn-danger btn-sm">delete</a>
+                                <div class="d-flex align-items-center list-action">
+                                    <a href="#" onclick="event.preventDefault();editRanchMarket({{ $ranchMarket->id }})"
+                                        class="badge bg-success" data-toggle="tooltip" data-placement="top" title=""
+                                        data-original-title="Edit"><i class="ri-pencil-line mr-0"></i></a>&nbsp;
+                                    <form action="{{route('ranch_market.destroy', $ranchMarket->id)}}" method="POST">
+                                        @method('delete')
+                                        @csrf
+                                        <button class="badge bg-warning mb-1 border-0"
+                                            onclick="return confirm('Hapus Data Ini ?')" data-toggle="tooltip"
+                                            data-placement="top" title="" data-original-title="Delete">
+                                            <i class="ri-delete-bin-line mr-0"></i>
+                                        </button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
@@ -168,9 +179,7 @@ Ranch Market
                             <div class="form-group">
                                 <label>Regency</label>
                                 <select id="edit_regency" name="regency_id" class="form-control">
-                                    @foreach ($regencies as $regency)
-                                    <option value="{{ $regency->id }}">{{ $regency->name }}</option>
-                                    @endforeach
+
                                 </select>
                             </div>
                         </div>
@@ -208,17 +217,37 @@ Ranch Market
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mapModalLabel">Map</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="map-responsive">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
 @push('scripts')
 <script>
-    function addSelectProvince(element)
-    {
+    function addSelectProvince(element) {
         let url = "{{ route('get-regencies', ':id') }}";
-            url = url.replace(':id', element.value);
+        url = url.replace(':id', element.value);
 
         $('#add_regency').find('option').remove();
-        $.get(url, function(data, status) {
-            for(const key in data){
+        $.get(url, function (data, status) {
+            for (const key in data) {
                 $('#add_regency').append(`
                 <option value="${data[key].id}">${data[key].name}</option>
                 `)
@@ -226,19 +255,19 @@ Ranch Market
         })
     }
 
-    function editRanchMarket(id)
-    {
+    function editRanchMarket(id) {
         let url = "{{ route('ranch_market.edit', ':id') }}";
-            url = url.replace(':id', id);
-        
+        url = url.replace(':id', id);
+
         $.ajax({
-            type:'GET',
-            url:url,
-            success:function(data) {
+            type: 'GET',
+            url: url,
+            success: function (data) {
+                console.log(data);
                 $('#editProvince').val(data.regency.province_id);
-                editSelectProvince($('#editProvince').change(), function(){
-                    $('#editRanchMarket').find('select[name="regency_id"]').val(data.regency_id).change();
-                });
+                $('#edit_regency').append(`
+                <option value="${data.regency.id}">${data.regency.name}</option>
+                `);
                 $('#editRanchMarket').find('input[name="name"]').val(data.name);
                 $('#editRanchMarket').find('input[name="post_code"]').val(data.post_code);
                 $('#editRanchMarket').find('input[name="telp"]').val(data.telp);
@@ -250,21 +279,35 @@ Ranch Market
         $('#editRanchMarket').modal('show');
     }
 
-    function editSelectProvince(element, callbackFn)
-    {
+    function editSelectProvince(element) {
         let url = "{{ route('get-regencies', ':id') }}";
-            url = url.replace(':id', element.value);
+        url = url.replace(':id', element.value);
 
         $('#edit_regency').find('option').remove();
-        $.get(url, function(data, status) {
-            for(const key in data){
+        $.get(url, function (data, status) {
+            for (const key in data) {
                 $('#edit_regency').append(`
                 <option value="${data[key].id}">${data[key].name}</option>
                 `)
             }
         })
+    }
 
-        callbackFn();
+    function openMap(id)
+    {
+        let url = "{{ route('ranch_market.edit', ':id') }}";
+        url = url.replace(':id', id);
+
+        $.ajax({
+            type: 'GET',
+            url: url,
+            success: function (data) {
+                console.log(data);
+                $('#mapModal').find('.map-responsive').html(data.embed);
+            }
+        });
+
+        $('#mapModal').modal('show');
     }
 </script>
 @endpush
