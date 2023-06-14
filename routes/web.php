@@ -22,6 +22,9 @@ use App\Http\Controllers\Admin\JurnalAdminController;
 use App\Http\Controllers\Admin\TestimoniAdminController;
 use App\Http\Controllers\Admin\FaqAdminController;
 use App\Http\Controllers\Admin\RanchMarketController as RanchMarketAdminController;
+use App\Http\Controllers\Admin\TutorialController as TutorialAdminController;
+use App\Http\Controllers\Admin\EventController as EventAdminController;
+use App\Http\Controllers\Landing\EventController;
 use App\Http\Controllers\RegencyController;
 use App\Models\Province;
 use GuzzleHttp\Client;
@@ -64,6 +67,8 @@ Route::get('/detail-product/{id}', [ProdukController::class, 'show'])->name('det
 
 Route::get('/generate-blog-slug', [DetailBlogController::class, 'generateSlug'])->name('slug.blog');
 
+Route::get('/event/{event:slug}/register', [EventController::class, 'register'])->name('event.register');
+Route::post('/event/{event:slug}/register', [EventController::class, 'storeRegister'])->name('event.register.store');
 
 //AUTH
 Route::get('/login', [LoginController::class, 'index'])->name('login');
@@ -88,6 +93,8 @@ Route::resource('blog', BlogController::class);
 Route::resource('jurnal_admin', JurnalAdminController::class);
 Route::resource('faq_admin', FaqAdminController::class);
 Route::resource('ranch_market', RanchMarketAdminController::class);
+Route::resource('events', EventAdminController::class);
+Route::delete('delete-participant/{participant}', [EventAdminController::class, 'destroyParticipant'])->name('delete.participant');
 
 Route::resource('testimoni_admin', TestimoniAdminController::class);
 Route::get('/testimoni_admin_gambar_view_create', [TestimoniAdminController::class, 'create_gambar_testi'])->name('testimoni_admin_gambar_view_create');
@@ -95,6 +102,8 @@ Route::get('/testimoni_admin_gambar_edit/{id}', [TestimoniAdminController::class
 Route::post('/testimoni_admin_gambar_create', [TestimoniAdminController::class, 'create_gambar_testimoni'])->name('testimoni_admin_gambar_create');
 Route::post('/testimoni_admin_gambar_update/{id}', [TestimoniAdminController::class, 'update_gambar_testi'])->name('testimoni_admin_gambar_update');
 Route::post('/testimoni_admin_gambar_delete/{id}', [TestimoniAdminController::class, 'delete_gambar_testi'])->name('testimoni_admin_gambar_delete');
+Route::resource('tutorials', TutorialAdminController::class);
+
 });
 
 Route::get('get-regencies/{province}', [RegencyController::class, 'index'])->name('get-regencies');
