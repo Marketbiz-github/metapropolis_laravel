@@ -79,6 +79,16 @@
                                         <i class="las la-minus"></i><span>Ranch Market</span>
                                     </a>
                             </li>
+                            <li class="">
+                                    <a href="{{route('tutorials.index')}}">
+                                        <i class="las la-minus"></i><span>Tutorial</span>
+                                    </a>
+                            </li>
+                            <li class="">
+                                    <a href="{{route('events.index')}}">
+                                        <i class="las la-minus"></i><span>Event</span>
+                                    </a>
+                            </li>
                     </ul>
                 </li>
             </ul>
