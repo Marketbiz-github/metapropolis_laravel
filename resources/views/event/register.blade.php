@@ -22,7 +22,7 @@
         <section class="login-content">
             <div class="container">
                 <div class="row align-items-center justify-content-center height-self-center">
-                    <div class="col-md-5">
+                    <div class="col-md-8">
                         <div class="card auth-card" style="opacity: 0.93;">
                             @if(session()->has('message'))
                             <div class="alert alert-danger col-lg-12" role="alert">
