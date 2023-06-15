@@ -64,7 +64,7 @@
                                             <img src="{{ asset('landing/eflyer-webinar-meta-propolis.png') }}"
                                                 class="img-fluid mt-3" alt="">
                                         </div>
-                                        <div class="m-3" style="background: rgb(33,33,113); background: linear-gradient(292deg, rgba(33,33,113,1) 27%, rgba(53,52,168,1) 100%); border-radius: 7px; box-shadow: 5px 11px 12px #00000041;">
+                                        <div class="m-3" style="width:100%; rgb(33,33,113); background: linear-gradient(292deg, rgba(33,33,113,1) 27%, rgba(53,52,168,1) 100%); border-radius: 7px; box-shadow: 5px 11px 12px #00000041;">
                                             <form action="{{ route('webinar.store') }}" method="post" class="px-4 pt-3 pb-4">
                                                 @csrf
                                                 <div class="row">
@@ -86,14 +86,7 @@
                                                             <input type="text" id="email" name="email" class="form-control" placeholder="example@mail.com">
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-12">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                            <label class="form-check-label text-white" for="defaultCheck1">
-                                                              Saya setuju dengan Syarat & Ketentuan
-                                                            </label>
-                                                        </div>
-                                                    </div>
+                                                    
                                                 </div>
                                                 <button type="submit" class="btn btn-primary mt-3" style="background-color: #DCAB3A; border-color: #DCAB3A;">Daftar</button>
                                             </form>
