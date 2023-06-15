@@ -25,7 +25,7 @@
                     <div class="col-md-8">
                         <div class="card auth-card" style="opacity: 0.93;">
                             @if(session()->has('message'))
-                            <div class="alert alert-danger col-lg-12" role="alert">
+                            <div class="alert alert-success col-lg-12" role="alert">
                                 {{session('message')}}
                             </div>
                             @endif
@@ -34,11 +34,14 @@
                                     <div class="row">
                                         <div class="col-md-12 text-center">
                                             <h5 class="mb-3 mt-2" style="color: #282780; font-weight: 900;">FORM PENDAFTARAN</h5>
+                                            <span class="d-block mb-2" style="line-height: 1.3; font-size: 18px;">Menjadi pebisnis adalah impian semua orang, namun pilihan bisnis apa yang tepat untuk Anda, dan bagaimana mempromosikan bisnis Anda di Online?</span>
+                                            <span class="d-block mb-2" style="line-height: 1.3; font-size: 18px;">Yuk ikutan di webinar GRATIS pada hari Senin,3 juli 2023 Jam 14.00 - 16.00 WIB</span>
+                                            <span class="d-block mb-2" style="line-height: 1.3; font-size: 18px;">Lengkapi Form pendaftaran di bawah ini, dan Anda akan langsung mendapatkan website toko online dari Meta Propolis <strong>GRATIS</strong></span>
                                             <img src="{{ asset('landing/eflyer-webinar-meta-propolis.png') }}"
-                                                class="img-fluid" alt="">
+                                                class="img-fluid mt-3" alt="">
                                         </div>
                                         <div class="m-3" style="background: rgb(33,33,113); background: linear-gradient(292deg, rgba(33,33,113,1) 27%, rgba(53,52,168,1) 100%); border-radius: 7px; box-shadow: 5px 11px 12px #00000041;">
-                                            <form action="{{ route('event.register.store', $event->slug) }}" method="post" class="px-4 pt-3 pb-4">
+                                            <form action="{{ route('webinar.store') }}" method="post" class="px-4 pt-3 pb-4">
                                                 @csrf
                                                 <div class="row">
                                                     <div class="col-md-12">
@@ -95,6 +98,12 @@
 
     <!-- app JavaScript -->
     <script src="{{ asset('admin/html/assets/js/app.js')}}"></script>
+
+    <script>
+        if($('alert-success')){
+            console.log('true');
+        }
+    </script>
 </body>
 
 </html>

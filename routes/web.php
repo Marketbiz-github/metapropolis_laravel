@@ -70,6 +70,9 @@ Route::get('/generate-blog-slug', [DetailBlogController::class, 'generateSlug'])
 Route::get('/event/{event:slug}/register', [EventController::class, 'register'])->name('event.register');
 Route::post('/event/{event:slug}/register', [EventController::class, 'storeRegister'])->name('event.register.store');
 
+Route::get('webinar', [EventController::class, 'webinar'])->name('webinar');
+Route::post('webinar', [EventController::class, 'webinarStore'])->name('webinar.store');
+
 //AUTH
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::get('/register', [LoginController::class, 'register'])->name('register');

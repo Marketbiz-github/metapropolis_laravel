@@ -24,4 +24,23 @@ class EventController extends Controller
 
         return redirect()->back()->with('message', 'Berhasil melakukan pendaftaran');
     }
+
+    public function webinar()
+    {
+        $event = Event::find(1);
+        return view('event.register', compact('event'));
+    }
+
+    public function webinarStore(Request $request)
+    {
+        $event = Event::find(1);
+
+        $event->participants()->create([
+            'name' => $request->input('name'),
+            'phone' => $request->input('phone'),
+            'email' => $request->input('email'),
+        ]); 
+
+        return redirect()->back()->with('message', 'Berhasil melakukan pendaftaran');
+    }
 }
