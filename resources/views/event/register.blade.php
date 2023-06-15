@@ -15,6 +15,27 @@
     <link rel="stylesheet"
         href="{{ asset('admin/html/assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css')}}">
     <link rel="stylesheet" href="{{ asset('admin/html/assets/vendor/remixicon/fonts/remixicon.css')}}">
+    <style>
+        .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+    </style>
 </head>
 
 <body style="background-color: #282780; background-image: url({{ asset('landing/group.png') }}); background-size: cover; background-position: bottom; background-repeat-y: no-repeat;">
@@ -24,8 +45,11 @@
                 <div class="row align-items-center justify-content-center height-self-center">
                     <div class="col-md-8">
                         <div class="card auth-card" style="opacity: 0.93;">
+                            @if(session()->has('name'))
+                            <input type="hidden" id="success_name" value="{{ session('name') }}">
+                            @endif
                             @if(session()->has('message'))
-                            <div class="alert alert-success col-lg-12" role="alert">
+                            <div id="success-register" class="alert alert-success col-lg-12" role="alert">
                                 {{session('message')}}
                             </div>
                             @endif
@@ -83,6 +107,12 @@
             </div>
         </section>
     </div>
+    {{-- FLOATING WHATSAPP --}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=6282125299227&text=Hallo%20Metapropolis"
+        class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
     <!-- Backend Bundle JavaScript -->
     <script src="{{ asset('admin/html/assets/js/backend-bundle.min.js')}}"></script>
@@ -100,8 +130,11 @@
     <script src="{{ asset('admin/html/assets/js/app.js')}}"></script>
 
     <script>
-        if($('alert-success')){
-            console.log('true');
+        if(document.getElementById('success-register')){
+            let name = document.getElementById('success_name').value;
+                name = name.split(' ').join('%20');
+            console.log(name);
+            location.href = 'https://wa.me/6282125299227?text=Halo%20nama%20saya%20'+name+',%0Asaya%20telah%20mendaftar%20di%20event%20webinar%20meta%20propolis';
         }
     </script>
 </body>

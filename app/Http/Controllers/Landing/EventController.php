@@ -41,6 +41,6 @@ class EventController extends Controller
             'email' => $request->input('email'),
         ]); 
 
-        return redirect()->back()->with('message', 'Berhasil melakukan pendaftaran');
+        return redirect()->back()->with('message', 'Berhasil melakukan pendaftaran')->with('name', $request->input('name'));
     }
 }
